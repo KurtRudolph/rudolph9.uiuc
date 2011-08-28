@@ -1,0 +1,26 @@
+
+Machine Problems for Summer 2011
+Note: Your solutions will be graded on EWS machines and only on EWS machines; we recommend that you write your MPs just using that machines (the address for remote access: remlnx2.ews.illinois.edu). A solution that does not compile will get no credit.
+Topic:	Total Points	Issued:	Due at 11:59pm CST (Central Standard Time) on:	Automatic extension
+(with 20% penalty)
+until 11:59pm on:
+MP0	Test OCaml	0 (ungraded)	Thursday, June 2	Sunday, June 5	---
+MP1	Recursion	20	Monday, June 6	Sunday, June 12	Tuesday, June 14
+Hand Written Assignments for Summer 2011
+Students who have registered for 4 credit must handin all extra credit problems of MPs.
+Note The late penalty is 20% of the total number of points possible on the base part of the assignment, plus 20% of the total points possible on the extra credit, if you attempt the extra credit. It is not 20% of the number of points your earn.
+
+Guide for Doing MPs
+A guide for how to attack an MP:
+Download mpXgrader.tar.gz and untar it (tar xzf mpXgrader.tar.gz where X is the number of the MP). This will create an mpXgrader directory. Go into that directory.
+Copy the mpX-skeleton.ml file as mpX.ml. To make sure you have all the necessary pieces, start by executing make. This will create the grader executable. Run the executable (./grader). Examine the failing test cases for places where errors produced by your code. At this point, everything should compile, but the score will be 0.
+Read and understand the problem for the handout that you wish to begin working on. (Usually, working from top to bottom makes most sense.) There is a tests file in this directory. This is an important file containing the an incomplete set of test cases; you'll want to add more cases to test your code more thoroughly. Reread the problem from the handout, examining any sample output given. Open the tests file in the mpXgrader directory. Find the test cases given for that problem. Add your own test cases by following the same pattern as of the existing test cases. Try to get a good coverage of your function's behaviour. You should even try to have enough cases to guarantee that you will catch any errors. (This is not always possible, but a desirable goal.) And yes, test cases should be written even before starting the implementation of your function. This is a good software development practice.
+If necessary, reread the stament of the problem once more. Place your code for the solution in mpX.ml, replacing the stub found there for it. Implement your function. Try to do this in a step-wise fashion. When you think you have a solution (or enough of a part of one to compile and be worth testing), save you work and execute make and the ./grader again. Examine the passing and failing test cases again. Each failure is an instance where your code failed to give the right output for the given input, and you will need to examine your code to figure out why. When you are finished making a round of corrections, run make, followed by ./grader again. Continue until you find no more errors.
+When your code no longer generates any errors for the problem on which you were working, return to steps 3) and 4) to proceed with the next problem you wish to solve, until there are no more problems to be solved.
+Interactive Debugging
+In addition to running "make" and "grader", you probably want to test your code interactively at the top level:
+Enter the directory with your source file.
+Type ocaml at the command line.
+Type #load "mpXcommon.cmo";; at the OCaml prompt, where X is the number of the assignment (this loads in the common stuff that we give you by defualt).
+Type #use "mpX.ml";; at the OCaml prompt, where X is the number of the assignment. This loads in your code, and adds the functions you have defined to the identifiers recognized at top level.
+Type in commands followed by ';;' at the OCaml prompt to test your code interactively. Anything that you can do in a code file, you can do interactively. For example, you can define identifiers using 'let x = ...', etc...

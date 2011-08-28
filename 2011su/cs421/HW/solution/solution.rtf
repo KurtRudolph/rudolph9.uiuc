@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww13320\viewh13960\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Problem 1.\
+	\
+	Let V stand for the variable rule, C stand for the constants rule, PO stand for the primitive\
+operations rule, AR stand for the arithmetic relations rule, LC for logical connectives, ITE\
+for the if then else rule, F stand for the function rule, APP for the application rule, L for the\
+let, LI stand for the let-in and LR for the let-rec rule.\
+\
+(a)  fun x -> (x+1; fun y -> let x = 1 in y)\
+\
+                                                                                   -----------------V      ------------------C\
+                                                                                   \{y:C\} |- x : int         \{y:C\} |- 1 : int \
+               ------------------V	------------------C      -----------------------------------LI\
+               \{x:C\} |- x : int           \{x:C\} |- 1 : int          \{y: C\} |- let x = 1 in y : F\
+              --------------------------------PO               ---------------------------------------F\
+               \{x:C\} |- (x +1) : D                                \{y:C\} |- fun y -> let x = 1 in y: E\
+              -------------------------------F                 -----------------------------------------------F         \
+               \{x:B\} |- fun x -> (x+1) : B                  \{x:B\} |- fun x -> (fun y -> let x = 1 in y) : C\
+               ----------------------------------------------------------------------------------------F\
+                          \{x: \} |- (fun x -> (x + 1; fun y -> let x 1 in y)) :  A\
+\
+(b) let f = fun x -> 2 * x in let g = fun x -> x + f  x\
+\
+\
+\
+\
+\
+\
+\
+	-----------------------------------------------------------------------------------------------------------F\
+                  \{ \} |- let f = fun x -> 2 * x in let g = fun x -> x + f x in if f 3 = g 2 then f 3 else g 2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Problem 2.\
+\
+(a)	\{(F(x,G(y)), F(G(z), G(G(w)))), (H(H(y)), H(z))\}\
+\
+	Decomposition: \{(F(x,G(y)), F(G(z), G(G(w)))), (H(H(y)), H(z))\}\
+\
+\
+\
+\
+}

@@ -1,0 +1,43 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                
+\geometry{letterpaper}                   
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Alternative High Performance Computing Benchmarks}
+\author{Kurt Robert Rudolph (rudolph9)}
+\date{}                                         
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Benchmarks for HPC systems generally focus on floating-point intensive calculations.  Few address data intensive graph operations, a class of computation greatly growing in demand.  As an alternative to the standard floating-point benchmarks a new benchmark, the Graph 500, has been proposed.  Implementations are provided in MPI and OpenMP.  
+
+The focus of this project is exploring additional implementations of the Graph500 benchmark.  Specifically the project is looking at the UPC programming model, a partitioned global address space language that extends C.  
+
+UPC is available on several HPC platforms and will be available on the Blue Waters system here at the University of Illinois Ubana-Champaign.
+
+The variety of parallel programming models utilized in the Graph500 benchmark provide valuable insight into discrete performance aspects of these HPC systems.  The UPC implementation of this project offers the additional perspective of a partitioned global address space model and further identifies discrepancies in performance of HPC systems.  
+\end{abstract}
+\section{Graph 500 Benchmark}
+	Unique from other available bench marks, the Graph 500 benchmark focuses on graph operation rather than floating point operation.  Additionally it employees multiple implementations of the data intensive graph operations performed.
+
+	Benchmarks which employee focus on 
+\section{Parallel Programing Models}
+
+\subsection{Unified Parllel C (UPC)}
+	The focus of this project has been exploring a Unified Parallel C implementation of the Graph500 benchmark.  Throughout the duration of the project the various aspects of the language have been explored.  
+
+	Unified Parllel C is an extention of C which employees the partitioned global address space (PGAS) model.  Specifically the language employees what are referred to as \emph{shared pointer}.  These shared pointers are the the center point of the language and are utilized to employee the PGAS model of programing.  
+\subsection{Message Passing Interface (MPI)}
+	Currently the first for implementing distributed parallel programs is generally MPI.  Rarely are other models used.  Highly tested, proven results and widely adopted MPI is simply the practical choice over other parallel models.  While PGAS languages such as UPC have potential they currently are not developed enough to contend with MPI.  
+	The Graph 500 V1.2 employees multiple implementations in MPI.  The "simple" MPI implementation achieves two-sided communication through standard \emph{send} and \emph{receive} communicators.  The "one_sided" MPI implementation achieves one-sided communication through MPI \emph{windows}, a feature built into MPICH2 API.  By creating an MPI \emph{window} a thread enables one sided communication through the variable allocated to store data within the thread the communication \emph{window} has been opened for.  
+		
+\subsection{OpenMP}	
+%\subsection{}
+
+
+
+\end{document}  

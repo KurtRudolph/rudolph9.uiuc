@@ -1,0 +1,31 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Problem Set}
+\author{Kurt Robert Rudolph}
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+\section{}
+	Given a type inference and a constraint set for each of the following expressions.  You don't need to solve the constraints, just present them.  Show the proof tree with all of the steps together with the name of the rule that you applying in each step and the constraints arising from each step.  A reference sheet containing all rules is at the end of this document.  
+	\subsection{}
+		\begin{program}
+			fun x -> (x+1; fun y-> let x = 1 in y)
+		\end{program}
+	
+
+
+%\subsection{}
+
+
+
+\end{document}  

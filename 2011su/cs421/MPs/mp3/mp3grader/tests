@@ -1,0 +1,104 @@
+(**************************************************************************
+ * You can add new test cases by adding new elements to the following lists
+ * Format is:
+ * TEST<X>ARG(<weight>, <function_name>, <arg1>, <arg2>, ..., <argX>)
+ *
+ * <X> is the number of argument that the function being tested takes.
+ **************************************************************************)
+
+let determine_app2_stu p f g list = List.fold_right (Student.determine_app_rec p f g) list Student.determine_app_base
+
+let determine_app2_sol p f g list = List.fold_right (Solution.determine_app_rec p f g) list Solution.determine_app_base
+
+let polar_to_cart2_stu list = List.fold_right Student.polar_to_cart_rec list Student.polar_to_cart_base
+let polar_to_cart2_sol list = List.fold_right Solution.polar_to_cart_rec list Solution.polar_to_cart_base
+
+let all_pred2_stu p list = List.fold_left (Student.all_pred_rec p) Student.all_pred_base list
+let all_pred2_sol p list = List.fold_left (Solution.all_pred_rec p) Solution.all_pred_base list
+
+let nearest2_stu n list = List.fold_left (Student.nearest_rec n) (Student.nearest_base list) list
+let nearest2_sol n list = List.fold_left (Solution.nearest_rec n) (Solution.nearest_base list) list
+
+let idk = fun x -> x
+let uk = fun _ -> ()
+
+(* This list is for regular problems *)
+let rubric =
+[
+  TEST1ARG(1, polar_to_cart, [ (0.0, 3.1415); (2.0, 0.0) ]) ;
+  TEST1ARG(1, polar_to_cart, [ (0.0, 3.1415); (0.0, 3.1415); (0.0, 3.1415); (2.0, 0.0) ]) ;
+  TEST1ARG(1, polar_to_cart, [  ]) ;
+  TEST1ARG(1, polar_to_cart, [ (2430.0, 3.1415); (2.0, 0.0) ]) ;
+
+  TEST4ARG(1, determine_app, (fun x -> x mod 2 = 0), (fun y -> y*2), (fun z -> z+2), [1;2;3;4;5;6]) ;
+  TEST4ARG(1, determine_app, (fun x -> x > 0.0), (fun y -> y**2.0), (fun z -> -.z), [1.0; (-2.0); 3.0; (-5.0)]) ;
+  TEST4ARG(1, determine_app, (fun x -> x > 0.0), (fun y -> y**2.0), (fun z -> -.z), [(1.0); (2.0); (-3.0); (5.0)]) ;
+  TEST4ARG(1, determine_app, (fun x -> x > 0.0), (fun y -> y**2.0), (fun z -> -.z), []) ;
+
+  TEST3ARG(1, separate_all_from_to, 1, 6, (fun x -> x mod 2 = 0)) ;
+  TEST3ARG(1, separate_all_from_to, 1, 26, (fun x -> x mod 2 = 1)) ;
+  TEST3ARG(1, separate_all_from_to, 1, 7, (fun x -> x mod 3 = 0)) ;
+  TEST3ARG(1, separate_all_from_to, 9, 7, (fun x -> x mod 3 = 0)) ;
+  TEST3ARG(1, separate_all_from_to, 6, 6, (fun x -> x mod 2 = 0)) ;
+
+  TEST2ARG(1, all_pred, (fun x -> x mod 2 = 0), [2; 4; 6; 8]) ;
+  TEST2ARG(1, all_pred, (fun x -> x mod 2 = 0), []) ;
+  TEST2ARG(1, all_pred, (fun x -> x="hey"), ["hey"; "hi"; "hey"]) ;
+  TEST2ARG(1, all_pred, (fun x -> x="hey"), ["hey"]) ;
+
+  TEST2ARG(1, nearest, 4, [1; 3; 8; 9]) ;
+  TEST2ARG(1, nearest, 4, []) ;
+
+  TEST2ARG(1, min_max, (fun x -> x*x),  [1; 1; 0; (-2)]) ;
+  TEST2ARG(1, min_max, (fun x -> x*x),  []) ;
+  TEST2ARG(1, min_max, (fun x -> x*x),  [1; 1; 12; 5; 0; 3; 2; (-4); (-12);  0; (-2)]) ;
+  
+  TEST4ARG_TWOFUN(1, determine_app2_sol, determine_app2_stu,
+   (fun x -> x mod 2 = 0), (fun y -> y*2), (fun z -> z+2), [1;2;3;4;5;6]);
+
+  TEST4ARG_TWOFUN(1, determine_app2_sol, determine_app2_stu,
+   (fun x -> x > 0.0), (fun y -> y**2.0), (fun z -> -.z), [1.0; (-2.0); 3.0; (-5.0)]) ;
+   
+  TEST1ARG_TWOFUN(1, polar_to_cart2_sol, polar_to_cart2_stu, [(0.0, 3.1415); (2.0, 0.0)]);
+  
+  TEST2ARG_TWOFUN(1, all_pred2_sol, all_pred2_stu, (fun x -> x mod 2 = 0), [2;4;6;8]);
+  TEST2ARG_TWOFUN(1, all_pred2_sol, all_pred2_stu, (fun x -> x="hey"), ["hey"; "hi"; "hey"]) ;
+
+  
+  TEST2ARG_TWOFUN(1, nearest2_sol, nearest2_stu, 4, [1;3;8;9]);
+  
+
+  TEST3ARG(1, app_all_with, [(fun x y -> x+y); (fun x y -> x*y )], 47, [1;2;3]) ;
+  TEST3ARG(1, app_all_with, [(fun x y -> (x,y) ); (fun x y -> (x*.2.0, y))], 3.14, ["hello"; "there"; "hi"]) ;
+
+
+  TEST3ARG(1, subk, 5, 2, idk) ;
+  TEST3ARG(1, subk, 5, 2, uk) ;
+  TEST3ARG(1, catk, "hi ", "there", idk) ;
+  TEST3ARG(1, catk, "hi ", "there", uk) ;
+  TEST2ARG(1, absk, (-2), idk) ;
+  TEST2ARG(1, absk, (-2), uk) ;
+  TEST3ARG(1, plusk, 2.0, 4.0, idk) ;
+  TEST3ARG(1, plusk, 2.0, 4.0, uk) ;
+  TEST3ARG(1, multk, 2.0, 8.0, idk) ;
+  TEST3ARG(1, multk, 2.0, 8.0, uk) ;
+  TEST2ARG(1, is_posk, 7, idk) ;
+  TEST2ARG(1, is_posk, 7, uk) ;
+
+  TEST5ARG(1, abcdk, 2.0, 3.0, 4.0, 5.0, idk) ;
+  TEST5ARG(1, abcdk, 2.0, 3.0, 4.0, 5.0, uk) ;
+
+  TEST2ARG(1, polar_to_cartk, [(0.0, 3.1415); (2.0, 0.0)], idk) ;
+  TEST2ARG(1, polar_to_cartk, [(0.0, 3.1415); (2.0, 0.0)], uk) ;
+
+  TEST3ARG(1, all_predk, (fun x k -> k(x mod 2 = 0)), [2; 4; 6; 8], idk);
+  TEST3ARG(1, all_predk, (fun x k-> k(x="hey")), ["hey"; "hi"; "hey"], idk);
+  TEST3ARG(1, all_predk, (fun x k -> k(x mod 2 = 0)), [2; 4; 6; 8], (fun _ -> ()));
+]
+(* Note: the last entry should not be followed by a semicolon. *)
+
+(* This list is for extra credit problems *)
+let extra_rubric = [
+  TEST3ARG(1, nearestk, 4, [1;3;8;9], idk) ;
+  TEST3ARG(0, nearestk, 4, [1;3;8;9], uk)
+]

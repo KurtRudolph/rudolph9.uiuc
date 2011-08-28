@@ -1,0 +1,74 @@
+open Mp5common
+let rubric_version = "1.0"
+let rubric_title = "CS421 Su 2011 MP5"
+
+(**************************************************************************
+ * You can add new test cases by adding new elements to the following lists
+ * Format is:
+ * TEST<X>ARG(<weight>, <function_name>, <arg1>, <arg2>, ..., <argX>)
+ *
+ * <X> is the number of argument that the function being tested takes.
+ **************************************************************************)
+
+let infer tree = Mp5common.canon (Mp5common.infer_exp Solution.gather_exp_ty_constraints [] tree);;
+let infer_stu tree =
+    Mp5common.canon (Mp5common.infer_exp Student.gather_exp_ty_constraints  [] tree);;
+
+let infer_dec tree = Mp5common.canon_dec (Mp5common.infer_dec Solution.gather_dec_ty_constraints [] tree);;
+let infer_dec_stu tree =
+    Mp5common.canon_dec (Mp5common.infer_dec Student.gather_dec_ty_constraints  [] tree);;
+
+let infer2 gamma tree =
+    Mp5common.canon (Mp5common.infer_exp Solution.gather_exp_ty_constraints gamma tree);;
+let infer2_stu gamma tree =
+    Mp5common.canon (Mp5common.infer_exp Student.gather_exp_ty_constraints  gamma tree);;
+
+let infer2_dec gamma tree =
+    Mp5common.canon_dec (Mp5common.infer_dec Solution.gather_dec_ty_constraints gamma tree);;
+let infer2_dec_stu gamma tree =
+    Mp5common.canon_dec (Mp5common.infer_dec Student.gather_dec_ty_constraints  gamma tree);;
+
+(***extra credit***)
+
+let probExtra = (Handle(AppExp (AppExp((ConstExp(PrimOp(BinOp ConcatOp))),
+                             ConstExp (StringConst "What")),
+                      RaiseExp (ConstExp (IntConst 3))),
+              {first = (Some 0, ConstExp (StringConst " do you mean?"));
+               rest=[(None, ConstExp (StringConst " the heck?"))]}))
+
+(* This list is for regular problems *)
+let rubric =
+[
+  (* Variables -- 5 points*)
+  TEST2ARG_TWOFUN(1, infer2, infer2_stu, (make_env "f" (FunType(BoolType, VarType(-1)))), (VarExp "f"));
+
+  (* If -- 10 points*)
+  TEST2ARG_TWOFUN(1, infer2, infer2_stu, (make_env "x" (VarType(-1))), IfExp (ConstExp (BoolConst true), ConstExp (IntConst 1), VarExp "x"));
+
+  (* App -- 10 points *)
+  TEST1ARG_TWOFUN(1, infer, infer_stu, (AppExp ((ConstExp(PrimOp(BinOp IntTimesOp))), ConstExp (IntConst 3))));
+
+  (* Fn -- 10 points *)
+  TEST1ARG_TWOFUN(1, infer, infer_stu, FnExp ("x", AppExp(AppExp((ConstExp(PrimOp(BinOp IntPlusOp))), VarExp "x"), VarExp "x")));
+
+  (* Raise -- 5 points *)
+  TEST1ARG_TWOFUN(1, infer, infer_stu, RaiseExp (ConstExp (IntConst 3)) );
+
+  (* LetExp -- 10 points *)
+  TEST1ARG_TWOFUN(1, infer, infer_stu, LetExp(Val("x", ConstExp(IntConst 6)), ConstExp (NilConst)) );
+
+  (* Sequence -- 10 points *)
+  
+  TEST1ARG_TWOFUN(1, infer_dec, infer_dec_stu, Seq ((Val ("x", (ConstExp (BoolConst true)))), (Val ("y", (ConstExp (IntConst 2))))));
+
+  (* Recursive -- 15 points *)
+
+  TEST1ARG_TWOFUN(1, infer_dec, infer_dec_stu, Rec{first=("ones", AppExp(AppExp((ConstExp(PrimOp(BinOp ConsOp))), ConstExp(IntConst 1)), VarExp "ones"));rest=[]})
+]
+
+(* This list is for extra credit problems *)
+let extra_rubric = [
+(* Handle -- 7 points *)
+  TEST1ARG_TWOFUN(1, infer, infer_stu, probExtra)
+]
+

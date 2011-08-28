@@ -1,0 +1,54 @@
+open Mp8common
+let rubric_version = "1.0"
+let rubric_title = "CS421 MP8"
+
+(**************************************************************************
+ * You can add new test cases by adding new elements to the following lists
+ * Format is:
+ * TEST<X>ARG(<weight>, <function_name>, <arg1>, <arg2>, ..., <argX>)
+ *
+ * <X> is the number of argument that the function being tested takes.
+ **************************************************************************)
+
+let parse s = Solution.main Micromllex2.token (Lexing.from_string s)
+let parse_stu s = Student.main  Micromllex.token  (Lexing.from_string s)
+
+
+(* Test cases should go in this list.
+ * The first element of the pair is the weight of the case,
+ * and the second is the string to be given to the parser.
+ *)
+
+(* This list is for regular problems *)
+let rubric = [
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q1 *) val x = \"hi\";");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q2 *) fst;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q3 *) val x = (3);");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q4 *) (3, 9);");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q5 *) let val x = 3 in x end;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "          (\"hi\"; 3);");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q6 *) val x = [1, 2, 3];");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q7 *) true orelse false;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q8 *) \"a\" < \"b\";");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(*  Q9 *) 3 :: 2 :: 1 :: nil;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q10 *) 3 + 4 * 2;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q11 *) hd nil;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q12 *) op +;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q13 *) fn x => if x then 3 else raise 4;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q14 *) val _ = \"hi\";");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q15 *) local val x = 2 in val y = x + 3 end;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q16 *) val rec f = fn x => f x;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q17 *) fun f x = g x x and g a b = f b;");
+
+(* Mixed tests to check precedences. *)
+(* MANY MORE TESTS WILL BE ADDED HERE IN THE FINAL GRADER *)
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* add *) 3 - 4 - 2 * 9 > 10 andalso true;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "          if true then 1 else 0 + 2;");
+TEST1ARG_TWOFUN(1, parse, parse_stu, "          (fn x => ()) 2;");
+]
+
+
+(* This list is for extra credit problems *)
+let extra_rubric = [
+TEST1ARG_TWOFUN(1, parse, parse_stu, "(* Q18 *) handle \"hi\" with 1 => \"one\" | 2 => \"two\";");
+]

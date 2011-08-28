@@ -1,0 +1,3 @@
+MP1 will help you learn basic OCaml syntax, and give you some practice writing simple functions. Keep in mind that your solution must define every required function, otherwise the grading program will not compile and you will receive no points for the entire homework set. For example, if you decide not to implement the function splat (for whatever reason), you need to have it defined as:
+let splat x = raise (Failure("Whatever you would like"))
+IMPORTANT: Make sure that you read the README file in the grader bundle . This file contains important information.

@@ -1,0 +1,95 @@
+(**************************************************************************
+ * You can add new test cases by adding new elements to the following lists
+ * Format is:
+ * TEST<X>ARG(<weight>, <function_name>, <arg1>, <arg2>, ..., <argX>)
+ *
+ * <X> is the number of argument that the function being tested takes.
+ **************************************************************************)
+
+open Mp4common
+
+let ins_stu x l = Student.insert (Solution.gencompare) x l
+let ins_sol x l = Solution.insert (Solution.gencompare) x l
+
+let eliminateNot_stu p = (Student.eliminateNot (Solution.eliminateImplies p))
+let eliminateNot_sol p = (Solution.eliminateNot (Solution.eliminateImplies p))
+
+(*
+let dnf_stu p = (Solution.normalize (Solution.to_dnf (Student.dnf p)))
+let dnf_sol p = (Solution.normalize (Solution.to_dnf (Solution.dnf p)))
+*)
+let dnf_stu p = (Solution.test_dnf (Student.dnf p))
+let dnf_sol p = (Solution.test_dnf (Solution.dnf p))
+
+let dnf_compact_stu p = (Solution.normalize (Student.dnf_compact p))
+let dnf_compact_sol p = (Solution.normalize (Solution.dnf_compact p))
+
+let solve_stu d = (Solution.test_solution d (Student.solve d))
+let solve_sol d = (Solution.test_solution d (Solution.solve d))
+
+(* This list is for regular problems *)
+let rubric =
+[
+  TEST1ARG(1, dept_payroll, [{id = "Jose Miguel"; salary = 26543.70}; {id = "Sue Wright"; salary = 25794.35}]);
+  TEST1ARG(1, dept_payroll, [{id = "Jose Miguel"; salary = 26543.70}; {id = ""; salary = 25794.35}]);
+  TEST1ARG(1, dept_payroll, []);
+  TEST1ARG(1, dept_payroll, [{id = 1; salary = 26543.70}; {id = 5; salary = 25794.35}]);
+
+  TEST1ARG(1, sum_smallest, [[2;5;-3]; [12; 16]; [5]]);
+  TEST1ARG(1, sum_smallest, []);
+  TEST1ARG(1, sum_smallest, [[2;5;-3]; []; [5]]);
+
+  TEST2ARG(1, gencompare, 0, 1);
+  TEST2ARG(1, gencompare, "hello", "world");
+  TEST2ARG(1, gencompare, [5;2;1], [5;1;2]);
+  TEST2ARG(1, gencompare, "", "");
+
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, (-1), [-2; 0; 2]);
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, (-2), [-2; 0; 2]);
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, (-1), []);
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, ("b"), ["a"; "c"; "e"]);
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, ("c"), ["a"; "c"; "e"]);
+  TEST2ARG_TWOFUN(1, ins_sol, ins_stu, ("d"), ["a"; "c"; "e"]);
+
+  TEST2ARG(1, compare, (Pos 1), (Neg 1));
+  TEST2ARG(1, compare, (Pos 1), (Pos 1));
+  TEST2ARG(1, compare, (Pos 1), (Pos 2));
+  TEST2ARG(1, compare, (Pos 1), (Neg 2));
+  TEST2ARG(1, compare, (Pos A), (Neg A));
+  TEST2ARG(1, compare, (Neg A), (Neg A));
+  TEST2ARG(1, compare, (Pos A), (Neg B));
+  TEST2ARG(1, compare, (Neg A), (Pos B));
+  TEST2ARG(1, compare, (Neg B), (Pos A));
+
+  TEST1ARG(1, eliminateImplies, (Implies (Atom (Pos 0), Atom (Pos 1))));
+  TEST1ARG(1, eliminateImplies, (Implies (Atom (Pos A), Atom (Pos B))));
+  TEST1ARG(1, eliminateImplies, (Implies (Atom (Pos C), Atom (Pos B))));
+  TEST1ARG(1, eliminateImplies, (Implies (Atom (Neg A), Atom (Pos B))));
+  TEST1ARG(1, eliminateImplies, (Implies (Not (Atom (Neg A)), Atom (Pos B))));
+  TEST1ARG(1, eliminateImplies, (Implies ((Implies (Atom (Neg A), Atom (Pos B))), Atom (Pos B))));
+
+  TEST1ARG(1, eliminateNot, (Not (Atom (Pos 0))));
+  TEST1ARG(1, eliminateNot, (Not (Atom (Pos A))));
+  TEST1ARG(1, eliminateNot, (Not (Atom (Neg A))));
+  TEST1ARG(1, eliminateNot, (Not (And ( Not (Atom (Neg 0)), (Or ((Atom (Pos 0)), (Atom (Neg 1))))))));
+  TEST1ARG(1, eliminateNot, (Not (Atom (Neg A))));
+
+  TEST1ARG_TWOFUN(1, dnf_sol, dnf_stu, And (Or(Atom (Pos 0), Atom (Pos 1)), Atom (Pos 2)));
+  TEST1ARG_TWOFUN(1, dnf_sol, dnf_stu, And (Or(Atom (Pos A), Atom (Pos B)), Atom (Pos C)));
+
+  TEST1ARG_TWOFUN(1, dnf_compact_sol, dnf_compact_stu, (Implies (Atom (Pos A), Atom (Pos B))));
+  TEST1ARG_TWOFUN(1, dnf_compact_sol, dnf_compact_stu, (Implies (Atom (Pos 0), Atom (Pos 1))));  
+
+  TEST1ARG_TWOFUN(1, solve_sol, solve_stu, (Disjunction [Conjunction [Pos A; Neg B]; Conjunction [Pos C]]));
+  TEST1ARG_TWOFUN(1, solve_sol, solve_stu, (Disjunction [Conjunction [Pos 0; Neg 1]; Conjunction [Pos 2]]));
+]
+(* Note: the last entry should not be followed by a semicolon. *)
+
+(* This list is for extra credit problems *)
+let extra_rubric = [
+  TEST2ARG(1, satisfies, [A; B], (And(Atom(Pos A),Atom(Pos B))));
+  TEST2ARG(0, satisfies, [0; 1], (And(Atom(Pos 0),Atom(Pos 1))));
+
+  TEST2ARG(1, satisfies, [A], (And(Atom(Pos A),Atom(Neg B))));
+  TEST2ARG(0, satisfies, [0], (And(Atom(Pos 0),Atom(Neg 1))));
+]
