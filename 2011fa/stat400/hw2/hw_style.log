@@ -1,0 +1,544 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  4 SEP 2011 21:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**hw_style.sty
+(./hw_style.sty
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage{
+                amsmath,amsfonts,amsthm,amssymb}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage{
+                setspace}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage{
+                fancyhdr}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage{
+                lastpage}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                extramarks}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \usepackage{
+                chngpage}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                soul}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage[usenames,dvipsnames]{
+                                     color}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \usepackage{
+                graphicx,float,wrapfig}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \usepackage{
+                 ifthen}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 courier}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \usepackage[vmargin=1.0in,hmargin=1.0in]{
+                                              geometry}
+? 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \usepackage{
+                 listings,color}
+? 
+! Undefined control sequence.
+l.15 \definecolor
+                 {mygray}{rgb}{0.95,0.95,0.95}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \definecolor{m
+                   ygray}{rgb}{0.95,0.95,0.95}
+? 
+Missing character: There is no m in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.16 \definecolor
+                 {mygreen}{rgb}{0.0,0.5,0.0}
+? 
+Missing character: There is no m in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+! Undefined control sequence.
+l.17 \lstset
+            {
+? 
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.19        numbers=left, numberstyle=\tiny
+                                           , stepnumber=1, numbersep=5pt,
+? 
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.20        basicstyle=\color
+                             {black}\ttfamily\small,
+? 
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+! Undefined control sequence.
+l.20 ...   basicstyle=\color{black}\ttfamily\small
+                                                  ,
+? 
+! Undefined control sequence.
+l.21        commentstyle=\color
+                               {mygreen}\ttfamily,
+? 
+! Undefined control sequence.
+l.22        keywordstyle=\color
+                               {blue}\ttfamily,
+? 
+! Undefined control sequence.
+l.23        stringstyle=\color
+                              {red}\ttfamily,
+? 
+! Undefined control sequence.
+l.25        backgroundcolor=\color
+                                  {mygray},
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--29
+[]
+ []
+
+
+Overfull \hbox (5.24995pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 ,
+ []
+
+
+Overfull \hbox (110.24904pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 commentstyle=mygreen,
+ []
+
+
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 keywordstyle=blue,
+ []
+
+
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 stringstyle=red,
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 showstringspaces=false,
+ []
+
+
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 backgroundcolor=mygray,
+ []
+
+
+Overfull \hbox (57.7495pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 breaklines,
+ []
+
+
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 15--29
+\OT1/cmtt/m/n/10 frame=single,
+ []
+
+! Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.31 \pagestyle{fancy}
+                      
+? 
+! Undefined control sequence.
+l.32 \lhead
+           {\hmwkAuthorName\ (\hmwkNetID) }
+? 
+! Undefined control sequence.
+l.32 \lhead{\hmwkAuthorName
+                           \ (\hmwkNetID) }
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \lhead{\hmwkAuthorName\ 
+                             (\hmwkNetID) }
+? 
+Missing character: There is no ( in font nullfont!
+! Undefined control sequence.
+l.32 \lhead{\hmwkAuthorName\ (\hmwkNetID
+                                        ) }
+? 
+Missing character: There is no ) in font nullfont!
+! Undefined control sequence.
+l.33 \chead
+           {\hmwkClass\ (\hmwkClassInstructor): \hmwkTitle}
+? 
+! Undefined control sequence.
+l.33 \chead{\hmwkClass
+                      \ (\hmwkClassInstructor): \hmwkTitle}
+? 
+Missing character: There is no ( in font nullfont!
+! Undefined control sequence.
+l.33 \chead{\hmwkClass\ (\hmwkClassInstructor
+                                             ): \hmwkTitle}
+? 
+Missing character: There is no ) in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.33 ...kClass\ (\hmwkClassInstructor): \hmwkTitle
+                                                  }
+? 
+! Undefined control sequence.
+l.34 \rhead
+           {\firstxmark}
+? 
+! Undefined control sequence.
+l.34 \rhead{\firstxmark
+                       }
+? 
+! Undefined control sequence.
+l.35 \lfoot
+           {\lastxmark}
+? 
+! Undefined control sequence.
+l.35 \lfoot{\lastxmark
+                      }
+? 
+! Undefined control sequence.
+l.36 \cfoot
+           {}
+? 
+! Undefined control sequence.
+l.37 \rfoot
+           {Page\ \thepage\ of\ \protect\pageref{LastPage}}
+? 
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.37 \rfoot{Page\ \thepage
+                          \ of\ \protect\pageref{LastPage}}
+? 
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ... Reference `LastPage' on page \thepage 
+                                                  \space undefined\on@line .
+l.37 ...\ \thepage\ of\ \protect\pageref{LastPage}
+                                                  }
+? 
+
+LaTeX Warning: Reference `LastPage' on page  undefined on input line 37.
+
+
+! LaTeX Error: \headrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \renewcommand\headrulewidth
+                                {0.4pt}
+? 
+
+! LaTeX Error: \footrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \renewcommand\footrulewidth
+                                {0.4pt}
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--40
+[]
+ []
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 32--40
+[]
+ []
+
+\labelLength=\skip41
+\c@homeworkProblemCounter=\count79
+\homeworkSectionLabelLength=\skip42
+)
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+
+*
+! Emergency stop.
+<*> \end
+        
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 53 strings out of 493634
+ 750 string characters out of 3143401
+ 49245 words of memory out of 3000000
+ 3450 multiletter control sequences out of 15000+200000
+ 4116 words of font info for 16 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 19i,2n,19p,223b,92s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
