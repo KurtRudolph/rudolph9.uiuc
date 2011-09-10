@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  9 SEP 2011 13:43
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  10 SEP 2011 17:29
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**stat400.hw2.rudolph9.tex
-(./stat400.hw2.rudolph9.tex
+**stat400.hw3.rudolph9.tex
+(./stat400.hw3.rudolph9.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
@@ -286,8 +286,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks39
 \verbatim@in@stream=\read1
 )
-(./stat400.hw2.rudolph9.aux)
-\openout1 = `stat400.hw2.rudolph9.aux'.
+(./stat400.hw3.rudolph9.aux)
+\openout1 = `stat400.hw3.rudolph9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -410,65 +410,24 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4] [5]
 
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Ÿ in font cmr10!
-Missing character: There is no Õ in font cmr10!
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 250.
 
-Overfull \hbox (2.16423pt too wide) detected at line 88
-\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 male \OMS/cmsy/m/n/10 \ \OM
-L/cmm/m/it/10 female\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML
-/cmm/m/it/10 maleThenFemale\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 P\OT1/cmr/m/n/1
-0 (\OML/cmm/m/it/10 FemaleThenMale\OT1/cmr/m/n/10 ) = [] \OMS/cmsy/m/n/10 ^^A [
-] \OT1/cmr/m/n/10 + [] \OMS/cmsy/m/n/10 ^^A [] \OT1/cmr/m/n/10 = [] + [] = 0\OM
-L/cmm/m/it/10 :\OT1/cmr/m/n/10 48
- []
-
-[3] [4] <prob6.png, id=25, 1367.1075pt x 372.39125pt>
-File: prob6.png Graphic file (type png)
- <use prob6.png>
-Package pdftex.def Info: prob6.png used on input line 125.
-(pdftex.def)             Requested size: 451.9772pt x 123.11108pt.
- [5 <./prob6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-[6] [7]
-Overfull \hbox (33.44803pt too wide) detected at line 236
-[] []
- []
-
-[8] [9] AED: lastpage setting LastPage 
-[10] (./stat400.hw2.rudolph9.aux) ) 
+AED: lastpage setting LastPage 
+[6] (./stat400.hw3.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5066 strings out of 493633
- 70911 string characters out of 3143378
- 174018 words of memory out of 3000000
- 8248 multiletter control sequences out of 15000+200000
+ 5041 strings out of 493633
+ 70506 string characters out of 3143378
+ 171018 words of memory out of 3000000
+ 8228 multiletter control sequences out of 15000+200000
  12768 words of font info for 49 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,12n,45p,714b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
+ 38i,11n,45p,478b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
@@ -476,12 +435,11 @@ ic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb>
-Output written on stat400.hw2.rudolph9.pdf (10 pages, 175667 bytes).
+ts/cm/cmti10.pfb>
+Output written on stat400.hw3.rudolph9.pdf (6 pages, 123421 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
