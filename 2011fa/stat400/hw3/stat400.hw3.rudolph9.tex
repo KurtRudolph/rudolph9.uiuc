@@ -23,61 +23,62 @@
 \newpage
 \begin{homeworkProblem}
 		Homer Simpson is going to Moe's Bar for some \emph{Flaming Moe's}.  Let $X$ denote the number of \emph{Flaming Moe's} that Homer Simpson will drink.  Suppose $X$ has the following probability distribution: 
+	\\ \includegraphics[width=\linewidth]{prob1.png}		
 	\begin{enumerate}[(a)]
 		\item Find the probability $F(4) = P(X = 4)$
 			\begin{homeworkSection}{Solution}
-		
+				\[P(X = 4) = 1 - \left( {0.1 + 0.2 + 0.3 + 0.3} \right) = 0.1\]
 			\end{homeworkSection}
 		\item Find the probability $P(X \ge 1)$
 			\begin{homeworkSection}{Solution}
-		
+				\[P\left( {X \ge 1} \right) = 1 - 0.1 = 0.9\]
 			\end{homeworkSection}
 		\item Compute the probability $P(X \ge 1 | X < 3)$
 			\begin{homeworkSection}{Solution}
-		
+				\[P\left( {X \geqslant 1|X < 3} \right) = \frac{{P\left( {X \geqslant 1 \cap X < 3} \right)}}{{P\left( {X < 3} \right)}} = \frac{{0.5}}{{0.6}} = 0.83\]
 			\end{homeworkSection}
 		\item Compute the expected value of $X, E(X)$
 			\begin{homeworkSection}{Solution}
-		
+				\[E\left[ X \right] = 0(0.1) + 1(0.2) + 2(0.3) + 3(0.3) + 4(0.1) = 2.1\]
 			\end{homeworkSection}
 		\item Compute the standard deviation of $X$, $SD(X)$
 			\begin{homeworkSection}{Solution}
-		
+\[\begin{gathered}  \sigma  = \sqrt {{{\left( {0(0.1) - 2.1} \right)}^2} + {{\left( {1(0.2) - 2.1} \right)}^2} + {{\left( {2(0.3) - 2.1} \right)}^2} + {{\left( {3(0.3) - 2.1} \right)}^2} + {{\left( {4(0.1) - 2.1} \right)}^2}}  \hfill \\   = \sqrt {4.41 + 3.61 + 2.25 + 1.44 + 2.89}  = 3.82 \hfill \\ \end{gathered} \]
 			\end{homeworkSection}
 	Suppose each \emph{Flaming Moe} costs \$1.50, and there is a cover charge of \$1.00 at the door.  Let $Y$ denote the amount of money Homer Simpson spends at the bar Then $Y = 1.50 \cdot X+1.00$.
 		\item Find the probability that Homer would spend over \$5.00.
 			\begin{homeworkSection}{Solution}
-		
+				\[P(Y>\$5.00) = P(X \ge 3) = 0.3 +0.1 = 0.4\]
 			\end{homeworkSection}
 		\item  Find the expected amount of money that Homer Simpson would spend, $E(Y)$.
 			\begin{homeworkSection}{Solution}
-		
+				\[ E[Y] = 1.5 E[X]+1 = \$4.15 \]
 			\end{homeworkSection}
 		\item  Find the standard deviation for the amount of money that Homer Simpson would spend, $SD(Y)$.
 			\begin{homeworkSection}{Solution}
-		
+				\[ SD(Y) = 1.5SD(X) = 5.73 \]
 			\end{homeworkSection}
 	\end{enumerate}
 \end{homeworkProblem}
 %=============================Problem2==========================%	
 \begin{homeworkProblem}
-	Suppose that probability that a duck hunter will suchessfully hit a duck is 0.40 on any given shot.  Suppose also that the outcome of each shot is independent from the others.  
+	Suppose that probability that a duck hunter will successfully hit a duck is 0.40 on any given shot.  Suppose also that the outcome of each shot is independent from the others.  
 	\begin{enumerate}[(a)]
 		\item What is the probability that the first successful hit will be on the fourth shot?
 			\begin{homeworkSection}{Solution}
-		
+				\[(0.6)(0.6)(0.6)(0.4) = 0.08\]
 			\end{homeworkSection}
 		\item What is the probability that the first successful hit will be on the ninth shot?
 			\begin{homeworkSection}{Solution}
-		
+				\[{(0.6)^8}(0.4) = 0.006\]
 			\end{homeworkSection}
 		\item What is the probability that the hunter would have three successful hits in nine shots?
 			\begin{homeworkSection}{Solution}
-		
+				\[{(0.6)^6}{(0.4)^3} = 0.003\]
 			\end{homeworkSection}
 		\item What is the probability that the hunter would have at least six successful hits in nine shots?
 			\begin{homeworkSection}{Solution}
-		
+				
 			\end{homeworkSection}
 	\end{enumerate}
 \end{homeworkProblem}
@@ -176,28 +177,29 @@ drawn. Is the game fair * ? Explain. [ Hint: Find  $\mu_X = E(X)$, the average (
 	\[f\left( x \right) = \frac{{{{\left( {\left| x \right| + 1} \right)}^2}}}{9},x =  - 1,0,1\]
 	Compute $E(X),E(X^2)$, and $E(3X^2 - 2X +4)$.
 	\begin{homeworkSection}{Solution}
-		
+		\[\begin{gathered}  E\left( X \right) = \left( { - 1} \right)\left( {\frac{4}{9}} \right) + \left( 0 \right)\left( {\frac{1}{9}} \right) + \left( 1 \right)\left( {\frac{4}{9}} \right) = 0 \hfill \\  E\left( {{X^2}} \right) = {\left( { - 1} \right)^2}\left( {\frac{4}{9}} \right) + \left( 0 \right)\left( {\frac{1}{9}} \right) + {\left( 1 \right)^2}\left( {\frac{4}{9}} \right) \hfill \\  E\left( {3{X^2} - 2X + 4} \right) = 3\left( {\frac{8}{9}} \right) - 2\left( 0 \right) + 4 = \frac{{20}}{3} \hfill \\ \end{gathered} \]
 	\end{homeworkSection}
 \end{homeworkProblem}
 %=============================Problem10==========================%	
 \begin{homeworkProblem}
-	{\bf 2.2-4} Ina a state lottery, a three-digit integer is selected at random.  A player bets \$1 on a particular number, and if that number is selected, the payoff is \$500 - \$1 paid ofr the ticket.  Let $X$ equal the payoff to the bettor, namely, -\$1 or \$499, and find $E(X)$.  
+	{\bf 2.2-4} In a state lottery, a three-digit integer is selected at random.  A player bets \$1 on a particular number, and if that number is selected, the payoff is \$500 minus the \$1 paid for the ticket.  Let $X$ equal the payoff to the bettor, namely, -\$1 or \$499, and find $E(X)$.  
 	\begin{homeworkSection}{Solution}
-		
+		\[\$ 499\left( {\frac{1}{{1000}}} \right) - \$ 1\left( {\frac{{999}}{{1000}}} \right) =  - \$ 0.50\]
 	\end{homeworkSection}
 \end{homeworkProblem}
-%=============================Problemi==========================%	
+%=============================Problem11==========================%	
 \begin{homeworkProblem}
 	{\bf 2.2-8}	Let the p.m.f. of $X$ be defined by $f(x) = 6/(\pi^2 x^2), x = 1, 2, 3, \dots$ Show that $E(X)$ does not exist in this case.  (Can you show that $f(x)$ is a p.m.f?)
 	\begin{homeworkSection}{Solution}
-		
+		\[\begin{gathered}  \sum\limits_{x = 1}^\infty  {\frac{6}{{{\pi ^2}{x^2}}}}  = \frac{6}{{{\pi ^2}}}\sum\limits_{x = 1}^\infty  {\frac{1}{{{x^2}}}}  = \frac{6}{{{\pi ^2}}}\frac{{{\pi ^2}}}{6} \Rightarrow p.d.f \hfill \\  E\left( X \right) = \sum\limits_{x = 1}^\infty  {x\frac{6}{{{\pi ^2}{x^2}}}}  = \frac{6}{{{\pi ^2}}}\sum\limits_{x = 1}^\infty  {\frac{1}{x}}  = \infty  \hfill \\ \end{gathered} \]
+		Hence $E(X)$ does not exist.
 	\end{homeworkSection}
 \end{homeworkProblem}
-%=============================Problemi==========================%	
+%=============================Problem12==========================%	
 \begin{homeworkProblem}
 	{\bf 2.3-4}	 Let $\mu$ and $\sigma^2$ denote the mean and variable of the random variable $X$.  Determine $E[(X - \mu)/ \sigma$ and $E\{[ (X - mu)/\sigma]^2\}$.  
 	\begin{homeworkSection}{Solution}
-		
+		\[\begin{gathered}  E\left[ {\frac{{X - \mu }}{\sigma }} \right] = \left( {\frac{1}{\sigma }} \right)\left[ {E\left( X \right) - \mu } \right] = \left( {\frac{1}{\sigma }} \right)\left( {\mu  - \mu } \right) = 0 \hfill \\  E\left[ {{{\left( {\frac{{X - \mu }}{\sigma }} \right)}^2}} \right] = \left( {\frac{1}{{{\sigma ^2}}}} \right)E\left[ {{{\left( {X - u} \right)}^2}} \right] = \left( {\frac{1}{{{\sigma ^2}}}} \right)\left( {{\sigma ^2}} \right) = 1 \hfill \\ \end{gathered} \]
 	\end{homeworkSection}
 \end{homeworkProblem}
 

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  16 SEP 2011 08:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 SEP 2011 18:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**stat400.hw3.rudolph9.tex
-(./stat400.hw3.rudolph9.tex
+**cs425.hw1.rudolph9.tex
+(./cs425.hw1.rudolph9.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
@@ -286,8 +286,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks39
 \verbatim@in@stream=\read1
 )
-(./stat400.hw3.rudolph9.aux)
-\openout1 = `stat400.hw3.rudolph9.aux'.
+(./cs425.hw1.rudolph9.aux)
+\openout1 = `cs425.hw1.rudolph9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -410,45 +410,51 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<prob1.png, id=10, 1050.92625pt x 377.41pt>
-File: prob1.png Graphic file (type png)
- <use prob1.png>
-Package pdftex.def Info: prob1.png used on input line 26.
-(pdftex.def)             Requested size: 469.75502pt x 168.69844pt.
- [2 <./prob1.png>]
-[3] [4] [5] [6]
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 265.
+<prob3.png, id=16, 965.6075pt x 553.06625pt>
+File: prob3.png Graphic file (type png)
+ <use prob3.png>
+Package pdftex.def Info: prob3.png used on input line 56.
+(pdftex.def)             Requested size: 469.75502pt x 269.0554pt.
+ [4 <./prob3.png>]
+<prob4.png, id=20, 1179.40625pt x 433.62pt>
+File: prob4.png Graphic file (type png)
+ <use prob4.png>
+Package pdftex.def Info: prob4.png used on input line 65.
+(pdftex.def)             Requested size: 469.75502pt x 172.7105pt.
+ [5 <./prob4.png>]
+<prob5.png, id=24, 1277.77374pt x 568.1225pt>
+File: prob5.png Graphic file (type png)
+ <use prob5.png>
+Package pdftex.def Info: prob5.png used on input line 74.
+(pdftex.def)             Requested size: 469.75502pt x 208.85835pt.
+ [6 <./prob5.png>] <prob6.png, id=28, 1269.74374pt x 584.1825pt>
+File: prob6.png Graphic file (type png)
+ <use prob6.png>
+Package pdftex.def Info: prob6.png used on input line 83.
+(pdftex.def)             Requested size: 469.75502pt x 216.1263pt.
 
 AED: lastpage setting LastPage 
-[7] (./stat400.hw3.rudolph9.aux) ) 
+[7 <./prob6.png>] (./cs425.hw1.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5047 strings out of 493633
- 70574 string characters out of 3143378
- 172018 words of memory out of 3000000
- 8232 multiletter control sequences out of 15000+200000
- 12768 words of font info for 49 fonts, out of 3000000 for 9000
+ 5049 strings out of 493633
+ 70605 string characters out of 3143378
+ 167018 words of memory out of 3000000
+ 8234 multiletter control sequences out of 15000+200000
+ 10761 words of font info for 40 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,13n,45p,478b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb>
-Output written on stat400.hw3.rudolph9.pdf (7 pages, 159825 bytes).
+ 38i,11n,45p,420b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on cs425.hw1.rudolph9.pdf (7 pages, 257167 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
