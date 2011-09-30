@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  10 SEP 2011 23:07
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  30 SEP 2011 17:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -419,38 +419,71 @@ File: prob2.png Graphic file (type png)
 Package pdftex.def Info: prob2.png used on input line 45.
 (pdftex.def)             Requested size: 469.75502pt x 116.77852pt.
  [2 <./prob2.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+<prob2b1.png, id=14, 449.68pt x 337.26pt>
+File: prob2b1.png Graphic file (type png)
+ <use prob2b1.png>
+Package pdftex.def Info: prob2b1.png used on input line 62.
+(pdftex.def)             Requested size: 415.57631pt x 311.69301pt.
+
+<prob2b2.png, id=15, 449.68pt x 337.26pt>
+File: prob2b2.png Graphic file (type png)
+ <use prob2b2.png>
+Package pdftex.def Info: prob2b2.png used on input line 63.
+(pdftex.def)             Requested size: 415.57631pt x 311.69301pt.
+ [3 <./prob2b1.png (PNG copy)>] <prob2c1.png, id=19, 449.68pt x 336.457pt>
+File: prob2c1.png Graphic file (type png)
+ <use prob2c1.png>
+Package pdftex.def Info: prob2c1.png used on input line 67.
+(pdftex.def)             Requested size: 415.57631pt x 310.95088pt.
+
+<prob2c2.png, id=20, 449.68pt x 337.26pt>
+File: prob2c2.png Graphic file (type png)
+ <use prob2c2.png>
+Package pdftex.def Info: prob2c2.png used on input line 68.
+(pdftex.def)             Requested size: 415.57631pt x 311.69301pt.
+ [4 <./prob2b2.png (PNG copy)>] [5 <./prob2c1.png (PNG copy)> <./prob2c2.png (P
+NG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
- [3]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+
+<prob3a.png, id=27, 963.6pt x 722.7pt>
+File: prob3a.png Graphic file (type png)
+ <use prob3a.png>
+Package pdftex.def Info: prob3a.png used on input line 105.
+(pdftex.def)             Requested size: 415.57631pt x 311.68124pt.
+ [6] [7 <./prob3a.png>]
+<prob4a.png, id=39, 963.6pt x 722.7pt>
+File: prob4a.png Graphic file (type png)
+ <use prob4a.png>
+Package pdftex.def Info: prob4a.png used on input line 129.
+(pdftex.def)             Requested size: 415.57631pt x 311.68124pt.
+ [8] [9 <./prob4a.png>]
 AED: lastpage setting LastPage 
-[4] [5] (./cs412.hw1.rudolph9.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[10] (./cs412.hw1.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5060 strings out of 493633
- 70816 string characters out of 3143378
- 171018 words of memory out of 3000000
- 8244 multiletter control sequences out of 15000+200000
+ 5090 strings out of 493633
+ 71250 string characters out of 3143378
+ 170018 words of memory out of 3000000
+ 8268 multiletter control sequences out of 15000+200000
  12114 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,45p,772b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cs412.hw1.rudolph9.pdf (5 pages, 101452 bytes).
+ 38i,11n,45p,862b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb>
+Output written on cs412.hw1.rudolph9.pdf (10 pages, 182569 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,7 +19,7 @@
 \begin{document}
 \begin{spacing}{1.1}
 \maketitle
-%=============================Problemi=========================%
+%=============================Problem1=========================%
 \newpage
 \begin{homeworkProblem}
 	As a highly application-driven discipline, data mining has been widely applied in many areas. We brieﬂy presented two highly successful and popular application examples of data mining: business intelligence and Web search engines, in our textbooks. Do you think that data mining can also be applied to the following areas? If yes, please provide a brief yet concrete example, if not, please briefly state your reasons.
@@ -46,15 +46,26 @@
 	\begin{enumerate}[(1)]
 		\item Calculate the mean, Q1, median, Q3, and standard deviation of price and weight
 			\begin{homeworkSection}{Solution}
-		
+				priceMean = 169.6420\\
+				priceMedian =  122.0350\\
+				priceStd = 156.9378\\
+				priceQ1 =  69.0750\\
+				priceQ2 =  234.0700\\
+				weightMean = 20.4900\\
+				weightMedian = 11.7000\\
+				weightStd = 21.0222 \\
+				weightQ1 = 5.8000 \\
+				weightQ2 = 34.1500 \\
 			\end{homeworkSection}
 		\item Draw the boxplots for price and weight
 			\begin{homeworkSection}{Solution}
-		
+					\includegraphics[width=\linewidth]{prob2b1.png}\\
+					\includegraphics[width=\linewidth]{prob2b2.png}
 			\end{homeworkSection}
 		\item Draw scatter plot and Q-Q plot based on these two variables
 			\begin{homeworkSection}{Solution}
-		
+					\includegraphics[width=\linewidth]{prob2c1.png}\\
+					\includegraphics[width=\linewidth]{prob2c2.png}
 			\end{homeworkSection}
 		\item Normalize the two variables based on the min-max normalization $(min = 1, max = 10)$
 			\begin{homeworkSection}{Solution}
@@ -70,37 +81,44 @@
 			\end{homeworkSection}
 		\item Take the price of the above 20 products, partition them into four bins by each of the following methods
 			\begin{itemize}
-				\item equal-width partitioning
+				\item equal-width partitioning\\
+					Width = Max-Min/4 = 153.9375\\
+					Bin1: 9.2500, 10.4700, 11.7800, 38.4500, 65.0000, 73.1500, 85.1200, 102.1400, 102.4500, 120.4500, 123.6200, 125.0000\\
+					Bin2: 164.3200, 203.2900, 225.5000, 242.6400, 298.0000\\
+					Bin3: 325.4500, 441.7600\\
+					Bin4: 625.0000
+					
 				\item equal-depth (equal-frequency) partitioning
+					Bin1: 9.2500, 10.4700, 11.7800, 38.4500, 65.0000\\
+					Bin2: 73.1500, 85.1200, 102.1400, 102.4500, 120.4500\\
+					Bin3: 123.6200, 125.0000, 164.3200, 203.2900, 225.5000\\
+					Bin4: 242.6400, 298.0000, 325.4500, 441.7600, 625.0000
 			\end{itemize}
-				\begin{homeworkSection}{Solution}
-		
-				\end{homeworkSection}
 	\end{enumerate}
 \end{homeworkProblem}
-%=============================Problemi==========================%	
+%=============================Problem3==========================%	
 \begin{homeworkProblem}
 	Design a data warehouse for a university's gradebook data to analyze the class performances.  Suppose the data warehouse consisting of the following dimensions: department, semester, course, student, instructor, and gradebook; and a set of measures you would like to define.
 	\begin{enumerate}[(a)]
 		\item Draw a star-schema, based on your consideration of power and convenience of analysis of the warehouse
 			\begin{homeworkSection}{Solution}
-		
+				\includegraphics[width=\linewidth]{prob3a.png}
 			\end{homeworkSection}
 		\item Suppose we want to present the standard-deviation of final scores by course and year, and freely drilling up and down in multidimensional space, describe how this measure can be computed efficiently
 			\begin{homeworkSection}{Solution}
-		
+				We can construct our multidimensional as a function of semester, student, gradebook.  Doing so we are able to feel drill up and down the space and gather the information year by year (each set of fall summer and spring semesters).  
 			\end{homeworkSection}
 		\item Is top 10\% in a class a holistic or algebraic measure?  Discuss how to develop an efficient (maybe approximate) methods to compute a query like: find those Engineering students whose final score is within top 10\% in class in at least 80\% of the CS courses that he or she has taken? 
 			\begin{homeworkSection}{Solution}
-		
+				This is a holistic measure.  An efficient method to compute such a query is to conduct preprocessing to enable efficient execution of such query, measure such as equal depth binning enables a query such at top 10\% to be 80\% percent of the CS courses that this individual has taken to be excited with significantly quicker table lookups.  The data is not longer sparse but ordered.  The execution of the query may follow picking the top 80\% of each students classes followed by picking the top 10\% of those individuals, the buckets make the original execution of the query rather quick and while the ranking of the students for the top 80\% of the classes differs from 100\% of their classes, have the students sorted by buckets in this manor makes the 80\% query is simi-sorted rank and may drastically reduce the running time.  
 			\end{homeworkSection}
 		\item Is it a good idea to merge this data warehouse and the current university's gradebook database system together into one big data management/analysis system? Why?
 			\begin{homeworkSection}{Solution}
-		
+				Like with any decision their are pros and cons to one large data base.  The current university grade book database system works!  By merging all the data into one where house you run the risk of breaking a perfectly systems.  While at the same having two locations where the data stored for current purposes and another location where the data is stored for analytical purposes, we run into synchronization issues.  A single management system is the idea implementation for maximum efficiency, having the ability to perform analysis during non peak user hours makes best of the hardware and eliminates unnecessary redundant data but merging an existing working system into a new system always has it's down side.    
 			\end{homeworkSection}
 	\end{enumerate}
 \end{homeworkProblem}
-%=============================Problemi==========================%	
+%=============================Problem4==========================%	
 \begin{homeworkProblem}
 	A location-based social networking website which provides check-in services hires you to help them build a data warehouse. 
 
@@ -108,19 +126,20 @@
 	\begin{enumerate}[(a)]
 		\item Design a data warehouse that may facilitate effective on-line analytical processing for this website (provide both schema and measures, also explain why).
 			\begin{homeworkSection}{Solution}
-		
+				\includegraphics[width=\linewidth]{prob4a.png}\\
+				The schema chosen allows for easy analytical processing by itemizing the various components of the network.  Storing friendship interaction in a separate table allows for optimized analytics to be performed on who is interacting with who, as well having reservation stored in an additional table enables cross comparison and can easily determine who's friends are in venues or even the same venue near by.  
 			\end{homeworkSection}
 		\item Check-in data collected from the website and mobile applications are noisy. Besides network and device errors, are there any other reasons which might cause noises in this data set? For the reason you come up with, discuss a method that can clean-up check-in data effectively in the data warehouse.
 			\begin{homeworkSection}{Solution}
-		
+				Bots could be clogging the system to inflate the data collected about particular venues.  This can be cleaned up by examining the frequency a user is checking into a venue and the locations they are checking into.  If a user checks in at LA at 10:53 then Chicago at 10:54, this a strong indication that this is a bot clogging the system.  Other factors may be checked as well such as the friendship interaction to determine if this is a bot whom is likely to have other friends whom are bots.  
 			\end{homeworkSection}
 		\item One may like to performance on-line analytical processing to the checks-in data at different venues by month, by cities and by categories (Italian or Japanese, etc.). How can this be done efficiently in the data warehouse?
 			\begin{homeworkSection}{Solution}
-		
+				This may be done efficiently by examining the data in a three demential cube and parsing it from top to bottom row by row.  
 			\end{homeworkSection}
 		\item Hackers create fake profiles on this website. They are using bots to manipulate fake profiles, generate fake check-in data and try to add everyone as their friends (yes this is a common problem for many social network websites, and no, I am not telling you how to write bots). Although bots are trying to mimic real users, they still behave differently, e.g., they check-in at random places (Chicago this minute, Las Vegas next minute), they check-in way too often than real users, and their social network structures are usually very large but also very sparse (your friends on facebook tend to form communities but bots don't do that). Discuss possible solutions on how to identify fake profiles (bots) in your data warehouse.
 			\begin{homeworkSection}{Solution}
-		
+				A possible solution for finding bots is by ranking the frequency in which the check in, the high ones are likely candidates.  Calculating the distance between the previous checkin and the current checkin comparing it to average and the standard deviation.  As mentioned in the problem, check the friends of the bots whom are suspicious, likely the users who are bots have connected with networks of bot to mask the fact that they are not real user and likely the bots friends will have suspicious profiles as well.  
 			\end{homeworkSection}
 	\end{enumerate}
 \end{homeworkProblem}

@@ -1,0 +1,552 @@
+\documentclass{article}
+\usepackage{hw_style}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{verbatim}
+
+% Homework Specific Information
+\newcommand{\hmwkTitle}{Homework \#4}
+\newcommand{\hmwkDueDate}{Sep 23 Friday 3:00PM}
+\newcommand{\hmwkAuthorName}{Kurt Rudolph}%Name:
+\newcommand{\hmwkNetID}{rudolph9}%your netid
+\newcommand{\hmwkNotes}{}%I worked with...
+
+\newcommand{\hmwkSubTitle}{}
+\newcommand{\hmwkClass}{STAT 400}
+\newcommand{\hmwkClassTime}{}
+\newcommand{\hmwkClassInstructor}{Yinxiao Huang}
+
+\begin{document}
+\begin{spacing}{1.1}
+\maketitle
+%=============================Problem1=========================%
+\newpage
+\begin{homeworkProblem}
+	Suppose a discrete random variable X has the following probability distribution:
+	\[P\left( {X = k} \right) = \frac{{{{\left( {\ln 2} \right)}^k}}}{{k!}},k = 1,2,3, \ldots \]
+	Recall (Homework \#1 Problem 6): This is a valid probability distribution
+	\begin{enumerate}[(a)]
+		\item Find $\mu_X = E(X)$ by finding the sum of the infinite series.
+			\begin{homeworkSection}{Solution}
+				\[\sum\limits_{k = 1}^\infty  {\frac{{{{\left( {\ln 2} \right)}^k}}}{{k!}}}  = 1\]
+			\end{homeworkSection}
+		\item Find the moment-generating function of $X, M_X (t)$
+			\begin{homeworkSection}{Solution}
+				\[M\left( t \right) = E\left( {{e^{tX}}} \right) = \sum\limits_{x = 1}^\infty  {{e^{tx}}\frac{{{{\left( {\ln 2} \right)}^x}}}{{x!}}}  = 2{e^t} - 1\]
+			\end{homeworkSection}
+		\item Use $M_X (t)$ to find $\mu_X = E(X)$
+			\begin{homeworkSection}{Solution}
+				\[M(0) = 2{e^0} - 1\]
+			\end{homeworkSection}
+		\item Find $\sigma _X^2 = Var(X)$
+			\begin{homeworkSection}{Solution}
+				\[Var\left( X \right) = E\left( {X - \mu } \right)\sum\limits_{k = 1}^\infty  {\frac{{{{\left( {\ln 2} \right)}^{k - 1}}}}{{(k - 1)!}}}  = 2\]
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem2==========================%	
+\begin{homeworkProblem}
+	The number of typos made by a student follows Poisson distribution with the rate of 1.5 typos per page. Assume that the numbers of typos on different pages are independent.
+	\begin{enumerate}[(a)]
+		\item Find the probability that there are at most 2 typos on a page.
+			\begin{homeworkSection}{Solution}
+				\[f\left( 2 \right) = \frac{{{{1.5}^2}}}{{2!{e^2}}} = 0.1522\]
+			\end{homeworkSection}
+		\item Find the probability that there are exactly 10 typos in a 5-page paper.
+			\begin{homeworkSection}{Solution}
+					
+			\end{homeworkSection}
+		\item Find the probability that there are exactly 2 typos on each page in a 5-page paper.
+			\begin{homeworkSection}{Solution}
+				\[0.1522^5\]
+			\end{homeworkSection}
+		\item Find the probability that there is at least one page with no typos in a 5-page paper.
+			\begin{homeworkSection}{Solution}
+				\[1 - f(0)^5 = 1 - \frac{1}{{{2^5}}} = \frac{{31}}{{32}}\]
+			\end{homeworkSection}
+		\item Find the probability that there are exactly two pages with no typos in a 5-page paper.
+			\begin{homeworkSection}{Solution}
+				\[f(0)^2*(1 - f(0))^3 = \frac{1}{{32}}\]
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem3==========================%	
+\begin{homeworkProblem}
+	Suppose that the proportion of genetically modified (GMO) corn in a large shipment is 2\%. Suppose 50 kernels are randomly and independently selected for testing.
+	\begin{enumerate}[(a)]
+		\item Find the probability that exactly 2 of these 50 kernels are GMO corn.
+			\begin{homeworkSection}{Solution}
+				\[\frac{1}{{{{50}^2}}} \cdot \frac{{{{49}^{48}}}}{{{{50}^{48}}}}\]
+			\end{homeworkSection}
+		\item Use Poisson approximation to find the probability that exactly 2 of these 50 kernels are GMO corn.
+			\begin{homeworkSection}{Solution}
+		
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem4==========================%	
+\begin{homeworkProblem}
+	Tom takes a multiple choice quiz in his Anthropology 100 class.
+	\begin{enumerate}[(a)]
+		\item The quiz has 10 questions; each has 4 possible answers, only one of which is correct.
+Tom did not study for the quiz, so he guesses independently on every question. What is the probability that Tom answers exactly 2 questions correctly?
+			\begin{homeworkSection}{Solution}
+				\[{\left( {\frac{1}{4}} \right)^2}{\left( {\frac{3}{4}} \right)^8}\]
+			\end{homeworkSection}
+		\item The quiz consists of 10 questions; the first 4 are True-False, the last 6 are multiple choice questions with 4 possible answers each, only one of which is correct. Tom did not study for the quiz, so he guesses independently on each question. Find the probability that he answers exactly 2 questions correctly.
+			\begin{homeworkSection}{Solution}
+		
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem5==========================%	
+\begin{homeworkProblem}
+	{\bf  2.4-4}	 Suppose that the percentage of college students who engaged in binge drinking, which is defined as having five drinks for males students and four drinks for female students at one "drinking occasion" during the previous two weeks, is approximately 40\%.  Let $X$ equal the number of students in a random sample of size $n = 12$ who binge drink.  
+	\begin{enumerate}[(a)]
+		\item Find the probability that $X$ is at most 5.
+			\begin{homeworkSection}{Solution}
+				\[ P(X \le 5) = 0.6652\]
+			\end{homeworkSection}
+		\item Find the probability that $X$ is at least 6
+			\begin{homeworkSection}{Solution}
+				\[P(X \ge 6) = 1 - P(X \le 6) = 0.9427 - 0.8418 = 0.1009 \]
+			\end{homeworkSection}
+		\item Find the probability that $X$ is equal to 7.
+			\begin{homeworkSection}{Solution}
+				\[P(X \le 7) - P(X \le 6) = 0.9427 - 0.8418 = 0.1009\]
+			\end{homeworkSection}
+		\item Give the mean, variance, and standard deviation of $X$
+			\begin{homeworkSection}{Solution}
+				\[ \mu = (12)(0.40) = 4.8, \sigma^2 = (12)(0.40)(0.60) = 2.88, \sigma = \sqrt {2.88} = 1.697 \]
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem6==========================%	
+\begin{homeworkProblem}
+	{\bf 2.4-12} A certain type of mint has a weight of 20.4 grams.  Suppose that the probability is 0.90 that a mint weighs more than 20.7 grams.  Let $X$ equal the number of mints that weigh more than 20.7 grams in a sample of eight mints selected at random.
+	\begin{enumerate}[(a)]
+		\item How is $X$ distributed if we assume independence?
+			\begin{homeworkSection}{Solution}
+				\[ X = b(8, 0.90) \]
+			\end{homeworkSection}
+		\item Find
+			\begin{enumerate}[(i)]
+				\item $P(X = 8)$
+					\begin{homeworkSection}{Solution}
+						\[P(X = 8) = (8 -X = 0) = 0.4305\]
+					\end{homeworkSection}
+				\item $P(X \le 6)$
+					\begin{homeworkSection}{Solution}
+						\[ P(X \le 6) = P(8 - X \ge 2) = 1 - P(8 - X \le 1) = 1 - 0.8131 = 0.1869 \]
+					\end{homeworkSection}
+				\item $P(X \ge 6)$
+					\begin{homeworkSection}{Solution}
+						\[ P(X \ge 6) = P(8 - X \le 2) = 0.9619 \]
+					\end{homeworkSection}
+			\end{enumerate}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem7==========================%	
+\begin{homeworkProblem}
+	{\bf 2.4-18} A hospital obtains 40\% of its flu vaccine from Compony $A$, 50\% from Company $B$, and 10\% from Company $C$.  From past experience it is known that 3\% of the vials from $A$ are ineffective, 2\% from $B$ are ineffective, and 5\% from $C$ are ineffective.  The hospital tests five vials from each shipment.  If at least one of the five is ineffective, find the conditional probability of that shipment's having come from $C$.  
+	\begin{homeworkSection}{Solution}
+	\[\frac{{\left( {0.1} \right)\left( {1 - {{0.95}^5}} \right)}}{{\left( {0.4} \right)\left( {1 - {{0.97}^5}} \right) + \left( {0.5} \right)\left( {1 - {{0.98}^5}} \right) + \left( {0.1} \right)\left( {1 - {{95}^5}} \right)}} = 0.178\]
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problem8==========================%	
+\begin{homeworkProblem}
+	{\bf  2.5-2}	 
+	\begin{enumerate}[(i)]
+		\item Give the name of the distribution of $X$ (if it has a name)
+		\item Find the values of $\mu$ and $\sigma^2$
+		\item Calculate $P( 1 \le X \le 2)$ when the moment-generating function of $X$ is given by
+	\end{enumerate}
+	
+	\begin{enumerate}[(a)]
+		\item $M(t) = (0.3 + 0.7e^t)^5$
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[b(5, 0.7)\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ \mu = 3.5, \sigma^2 = 1.05\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.1607\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $M(t) = \frac {0.3e^t}{1 - 0.7e^t}, t < - \ln (0.7)$
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ geometric,  p = 0.3\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ \mu = \frac {10}{3}, \sigma^2 = \frac{70}{9} \]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.51\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $M(t) = 0.45 + 0.55e^t$
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ Bernoulli, p = 0.55\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ \mu = 0.55, \sigma^2 = 0.2475\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.55\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $M(t) = 0.3e^t + 0.4e^{2t} + 0.2e^{3t} + 0.1e{4t}$
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[na\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ \mu = 2.1, \sigma^2 = 0.2475\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.70\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item  $M(t) = (0.6e^t)^2(1-0.4e^t)^-2, t < -\ln(0.4)$
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[Negative Binomial, p = 0.6, r = 2\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[ \frac {10}{3}, \sigma^2 = \frac{20}{9}\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.36\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $M(t) = \sum\nolimits_{x = 1}^{10} {(0.1){e^{tx}}} $
+			\begin{enumerate}[(i)]
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[Discrete Uniform, 1,2, \dots, 10 \]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[5.5, 8.25\]
+					\end{homeworkSection}
+				\item 
+					\begin{homeworkSection}{Solution}
+						\[0.2\]
+					\end{homeworkSection}
+			\end{enumerate}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem9==========================%	
+\begin{homeworkProblem}
+	{\bf 2.5-3}	If the moment-generating function of $X$ is 
+	\[M(t) = \frac{2}{5}{e^t} + \frac{1}{5}{e^{2t}} + \frac{2}{5}{e^{3t}}\]
+	find the mean, variance and p.m.f. of $X$
+	\begin{homeworkSection}{Solution}
+		\[\begin{gathered}  f\left( x \right) = \left( {\begin{array}{*{20}{c}}  1 \\   x \end{array}} \right){\left( {\frac{2}{5}} \right)^x}{\left( {\frac{1}{5}} \right)^{2x}}{\left( {\frac{2}{5}} \right)^{3x}} \hfill \\  \mu  = M'\left( 0 \right) = \frac{2}{5} + \frac{2}{5} + \frac{6}{5} = 2 \hfill \\  Var\left( X \right) = E\left( {X - \mu } \right) = \sum\limits_{x = 1}^\infty  {\left( {\begin{array}{*{20}{c}}  1 \\   {x - 2} \end{array}} \right)} {\left( {\frac{2}{5}} \right)^{x - 2}}{\left( {\frac{1}{5}} \right)^{2x - 4}}{\left( {\frac{2}{5}} \right)^{3x - 6}} \hfill \\ \end{gathered} \]
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problem10==========================%	
+\begin{homeworkProblem}
+	{\bf 2.5-4}	Let $X$ equal the number of people selected at random that you must ask in order to find someone with the same birthday as yours.  Assume that each day of the year is equally likely, ignore February 29.  
+	\begin{enumerate}[(a)]
+		\item What is the p.m.f. of $X$?
+			\begin{homeworkSection}{Solution}
+				\[f\left( x \right) = {\left( {\frac{{364}}{{365}}} \right)^{x - 1}}\left( {\frac{1}{{365}}} \right),x = 1,2,3, \ldots \]
+			\end{homeworkSection}
+		\item Give the values of the mean, variance, and standard deviation of $X$.
+			\begin{homeworkSection}{Solution}
+				\[\begin{gathered}
+  \mu  = \frac{1}{{\frac{1}{{365}}}} = 365 \hfill \\
+  {\sigma ^2} = \frac{{\frac{{364}}{{365}}}}{{{{\left( {\frac{1}{{365}}} \right)}^2}}} = 132,860 \hfill \\
+  \sigma  = 364.500 \hfill \\ 
+\end{gathered} \]
+			\end{homeworkSection}
+		\item Find $P(X > 400)$ and $P(X < 300)$
+			\begin{homeworkSection}{Solution}
+				\[\begin{gathered}
+  P\left( {X > 400} \right) = {\left( {\frac{{364}}{{365}}} \right)^{400}} = 0.3337 \hfill \\
+  P\left( {X < 300} \right) = 1 - {\left( {\frac{{364}}{{365}}} \right)^{299}} = 0.5597 \hfill \\ 
+\end{gathered} \]
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem11==========================%	
+\begin{homeworkProblem}
+	{\bf 2.5-10} Suppose that a basketball player different from the one in Example 2.5-5 can make a free throw 60\% of the time.  Let $X$ equal the minimum number of free throws that this player must attempt to make a total of 10 shots.
+	\begin{enumerate}[(a)]
+		\item Give the mean, variance, and standard deviation of $X$.
+			\begin{homeworkSection}{Solution}
+				Negative binomial with $r = 10, p = 0.6$ so 
+				\[\mu  = \frac{{10}}{{0.60}} = 16.667,{\sigma ^2} = \frac{{10\left( {0.40} \right)}}{{{{\left( {0.60} \right)}^2}}} = 11.111,\sigma  = 3.333\]
+			\end{homeworkSection}
+		\item Find $P(X = 16)$
+			\begin{homeworkSection}{Solution}
+				\[P\left( {X = 16} \right) = \left( {\begin{array}{*{20}{c}}
+  {15} \\ 
+  9 
+\end{array}} \right){\left( {0.60} \right)^{10}}{\left( {0.40} \right)^6} = 0.1240\]
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problem12==========================%	
+\begin{homeworkProblem}
+	{\bf 2.6-2}	Let $X$ have a Poisson distribution with a variance of 3.  Find P$(X = 2)$.
+	\begin{homeworkSection}{Solution}
+		\[\begin{gathered}
+  \lambda  = \mu  = {\sigma ^2} = 3 \hfill \\
+   \Rightarrow P\left( {X = 2} \right) = 0.423 - 0.199 = 0.224 \hfill \\ 
+\end{gathered} \]
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problem13==========================%	
+\begin{homeworkProblem}
+	{\bf 2.6-4}	If $X$ has a Poisson distribution such that $3P(X = 1) = P(X = 2)$, find $P(X = 4)$.
+	\begin{homeworkSection}{Solution}
+		\[\begin{gathered}
+  3\frac{{\lambda {e^{ - \lambda }}}}{{1!}} = \frac{{{\lambda ^2}{e^{ - \lambda }}}}{{2!}} \hfill \\
+  {e^{ - \lambda }}\lambda \left( {\lambda  - 6} \right) = 0 \hfill \\
+  \lambda  = 6 \hfill \\
+   \Rightarrow P\left( {X = 4} \right) = 0.285 - 0.151 = 0.134 \hfill \\ 
+\end{gathered} \]
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problem14==========================%	
+\begin{homeworkProblem}
+	{\bf 3.3-2}	For each of the following functions
+	\begin{enumerate}[(i)]
+		\item Find the constancy $c$ so that $f(x)$ is a p.d.f. of a random variable $X$
+		\item Find the distribution function $F(x) = P(X \le x)$
+		\item Sketch graphs of the p.d.f $f(x)$ and distribution function $F(X)$
+	\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item $f(x) = x^3/4, 0 < x < c$
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  \int\limits_0^c {\frac{{{x^3}}}{4}dx}  = 1 \hfill \\
+						  \frac{{{c^4}}}{{16}} = 1 \hfill \\
+						  c = 2 \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  F\left( x \right) = \int\limits_{ - \infty }^x {f\left( t \right)dt}  \hfill \\
+						   = \int\limits_0^x {\frac{{{t^3}}}{4}dt}  = \frac{{{x^4}}}{{16}} \hfill \\
+						  F\left( x \right) = \left\{ \begin{gathered}
+						  0, - \infty  < x < 0 \hfill \\
+						  \frac{{{x^4}}}{{16}},0 \le x < 2 \hfill \\
+						  1,2 \le x < \infty  \hfill \\ 
+						\end{gathered}  \right. \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+								
+			
+					\end{homeworkSection}
+			\end{enumerate}				
+		\item $f(x) = (3/16)x^2, -c < x < c$
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  \int\limits_{ - c}^c {\left( {\frac{3}{{16}}} \right){x^2}dx}  = 1 \hfill \\
+						  \frac{{{c^3}}}{8} = 1 \hfill \\
+						  c = 2 \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  F\left( x \right) = \int_{ - \infty }^x {f\left( t \right)dt}  = \int_{ - 2}^x {\frac{3}{{16}}{t^2}dt}  = \left[ {\frac{{{t^3}}}{{16}}} \right]_{ - 2}^x = \frac{{{x^3}}}{{16}} + \frac{1}{2} \hfill \\
+						  F\left( x \right) = \left\{ \begin{gathered}
+						  0, - \infty  < x <  - 2 \hfill \\
+						  \frac{{{x^3}}}{{16}} + \frac{1}{2}, - 2 \le x \le 2 \hfill \\
+						  1,2 \leqslant x < \infty  \hfill \\ 
+						\end{gathered}  \right. \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+		
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $f(x) = \sqrt x, 0 < x < 1$.  Is this p.d.f. bounded?
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  \int_0^1 {\frac{c}{{\sqrt x }}dx}  = 1 \hfill \\
+						  2c = 1 \hfill \\
+						  c = \frac{1}{2} \hfill \\ 
+						\end{gathered} \]
+						The p.d.f. is unbounded
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  F\left( x \right) = \int_{ - \infty }^x {f\left( t \right)dt}  = \int_0^x {\frac{1}{{2\sqrt t }}dt}  = \left[ {\sqrt t } \right]_0^x = \sqrt x  \hfill \\
+						  F\left( x \right) = \left\{ \begin{gathered}
+						  0, - \infty  < x < 0 \hfill \\
+						  \sqrt x ,0 \le x < 1 \hfill \\
+						  1,1 \le x < \infty  \hfill \\ 
+						\end{gathered}  \right. \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+		
+					\end{homeworkSection}
+			\end{enumerate}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problemi==========================%	
+\begin{homeworkProblem}
+	{\bf 3.3-4}	For each of the distributions in Exercise 3.3-2 find 
+		\begin{enumerate}[(i)]
+		\item $\mu$
+		\item $\sigma^2$
+		\item $\sigma$
+	\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item $f(x) = x^3/4, 0 < x < c$
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\mu  = E\left( x \right) = \int_0^2 {{x^4}} dx = \left[ {\frac{{{x^5}}}{{20}}} \right]_0^2 = \frac{{32}}{{20}} = \frac{8}{5}\]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  {\sigma ^2} = Var\left( X \right) = \int_0^2 {{{\left( {x - \frac{8}{5}} \right)}^2}\frac{{{x^3}}}{4}dx}  = \int_0^2 {\left( {\frac{{{x^5}}}{4} - \frac{4}{5}{x^4} + \frac{{16}}{{25}}{x^3}} \right)dx}  \hfill \\
+						   = \left[ {\frac{{{x^6}}}{{24}} - \frac{{4{x^5}}}{{25}} + \frac{{4{x^4}}}{{25}}} \right]_0^2 = \frac{{64}}{{24}} - \frac{{128}}{{25}} + \frac{{64}}{{25}} \approx 0.1067 \hfill \\ 
+						\end{gathered} \]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\sigma  = \sqrt {0.1067}  = 0.3266\]
+					\end{homeworkSection}
+			\end{enumerate}				
+		\item $f(x) = (3/16)x^2, -c < x < c$
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\mu  = E\left( X \right) = \int_{ - 2}^2 {\left( {\frac{3}{{16}}} \right){x^2}dx}  = \left[ {\frac{3}{{64}}{x^4}} \right]_{ - 2}^2 = \frac{{48}}{{64}} - \frac{{48}}{{64}} = 0\]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[{\sigma ^2} = Var\left( X \right) = \int_{ - 2}^2 {\left( {\frac{3}{{16}}} \right){x^4}dx}  = \left[ {\frac{3}{{80}}{x^5}} \right]_{ - 2}^2 = \frac{{96}}{{80}} + \frac{{96}}{{80}} = \frac{{12}}{5}\]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\sigma  = \sqrt {\frac{{12}}{5}}  \approx 1.5492\]
+					\end{homeworkSection}
+			\end{enumerate}
+		\item $f(x) = \sqrt x, 0 < x < 1$.  Is this p.d.f. bounded?
+			\begin{enumerate}[(a)]
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\mu  = E\left( X \right) = \int_0^1 {\frac{x}{{2\sqrt x }}dx}  = \int_0^1 {\frac{{\sqrt x }}{2}dx}  = \left[ {\frac{{{x^{3/2}}}}{3}} \right]_0^1 = \frac{1}{3}\]
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\begin{gathered}
+						  {\sigma ^2} = Var\left( X \right) = \int_0^1 {{{\left( {x - \frac{1}{3}} \right)}^2}\frac{1}{{2\sqrt x }}dx}  = \int_0^1 {\left( {\frac{1}{2}{x^{3/2}} - \frac{2}{6}{x^{1/2}} + \frac{1}{{18}}{x^{ - 1/2}}} \right)dx}  \hfill \\
+						   = \left[ {\frac{1}{5}{x^{5/2}} - \frac{2}{9}{x^{3/2}} + \frac{1}{9}{x^{1/2}}} \right]_0^1 = \frac{4}{{45}} \hfill \\ 
+						\end{gathered} \]						
+					\end{homeworkSection}
+				\item
+					\begin{homeworkSection}{Solution}
+						\[\sigma  = \frac{2}{{\sqrt {45} }} \approx 0.2981\]
+					\end{homeworkSection}
+			\end{enumerate}
+	\end{enumerate}
+\end{homeworkProblem}
+
+
+
+\end{spacing}
+\end{document}
+
+\begin{comment}%==========================================================
+%=============================Problemi==========================%	
+\begin{homeworkProblem}
+	
+	\begin{homeworkSection}{Solution}
+		
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problemi==========================%	
+\begin{homeworkProblem}
+	
+	\begin{enumerate}[(a)]
+		\item 
+			\begin{homeworkSection}{Solution}
+		
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problemi==========================%	
+\begin{homeworkProblem}
+	{\bf }	
+	\begin{homeworkSection}{Solution}
+		
+	\end{homeworkSection}
+\end{homeworkProblem}
+%=============================Problemi==========================%	
+\begin{homeworkProblem}
+	{\bf  }	
+	\begin{enumerate}[(a)]
+		\item 
+			\begin{homeworkSection}{Solution}
+		
+			\end{homeworkSection}
+	\end{enumerate}
+\end{homeworkProblem}
+%=============================Problemi=========================%
+\newpage
+\begin{homeworkProblem}
+	
+	\begin{homeworkSection}{Solution}
+		
+	\end{homeworkSection}
+\end{homeworkProblem}
+
+\end{comment}%=========================================================
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
