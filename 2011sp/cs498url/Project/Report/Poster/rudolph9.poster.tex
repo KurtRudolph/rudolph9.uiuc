@@ -97,20 +97,18 @@ keepaspectratio]{poster-background.pdf}}
 						\item Pointer arithmetic is rather costly.
 					\end{itemize}
 				\end{alertblock}
-				Note: The the poor timing results of the UPC dotProduct  (shown in the graph to the right)  are likely due to a compiler bug, a key optimization likely has been missed.  
-				\begin{block}{References}
+					The results to the right were taken on the NCSA Blue-Print cluster.  The cluster employs 64 nodes, each node supporting 16 power5 processing cores and 64GB of memory.  Both the MPI and UPC timing results were taken utilizing 1 to 64 nodes with 16 processes per node accordingly.  \\
 					\tiny{\rmfamily{\begin{thebibliography}{99}
 					\bibitem{MPI2} MPI-2: Extensions to the Message-Passing Interface, Message Passing Interface Forum, July 18, 1997.
 					\bibitem{ElG03a} Tarek A. El-Ghazawi, William W. Carlson, Jesse M. Draper. UPC Language Specifications V1.1 (http://upc.gwu.edu). March, 2003.
 					 \bibitem{Car99} William W. Carlson, Jesse M. Draper. Introduction to UPC and language specification CCS-TR-99-157.
 					 \end{thebibliography}}}
-				\end{block}
 			\end{column}
 			\begin{column}{\sepwid}\end{column}			% empty spacer column
 			\begin{column}{\twocolwid}
 				\begin{alertblock}{Abstract}
 					\rmfamily{
-						Benchmarks for HPC systems generally focus on floating-point intensive calculations. Few of these address data intensive graph operations, a class of computation greatly growing in demand. As an alternative to the standard floating-point benchmarks a new benchmark, the Graph 500, has been proposed. The focus of this project is exploring additional implementations of the Graph500 benchmark. Specifically the project is looking at the UPC programming model, a partitioned global address space language that extends C.
+						Benchmarks for High-Performance clusters generally focus on floating-point intensive calculations. Few of these address data intensive graph operations, a class of computation increasingly growing in demand.  As an alternative to standard floating-point benchmarks such as LinPack, a new benchmark, the Graph 500, has been proposed. The benchmark employ's multiple implementations with the intention to identify desecrate performance aspects via the comparative results, however a PGAS model has yet to be developed. This project focuses on early understanding of the capabilities a Graph 500 UPC implementation offers. Specifically: 1. the UPC expressibility for irregular graph operations of Graph500 2. simple performance testing the efficiency of UPC with runs up to 1024 cores.
 					}
 				\end{alertblock}
 				\begin{block}{The Graph 500 Benchmark}
@@ -122,7 +120,6 @@ keepaspectratio]{poster-background.pdf}}
 				\end{block}
 				\begin{block}{Timing Results}
 					\includegraphics[width=\twocolwid, keepaspectratio]{DotProduct.pdf}\\
-					The results above were taken on the NCSA Blue-Print cluster.  The cluster employs 64 nodes, each node supporting 16 power5 processing cores and 64GB of memory.  Both the MPI and UPC timing results were taken utilizing 1 to 64 nodes with 16 processes per node accordingly.  
 				\end{block}						
 			\end{column}	
 			\begin{column}{\sepwid}\end{column}			% empty spacer column
