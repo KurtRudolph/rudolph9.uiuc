@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Alternitive High Performance Computing Benchmarks}
+\author{Kurt Rudolph}
+%\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+Benchmarks for HPC systems generally focus on floating-point intensive calculations.  Few address data intensive graph operations, a class of computation greatly growing in demand.  As an alternative to the standard floating-point benchmarks a new benchmark, the Graph 500, has been proposed.  Implementations are provided in MPI and OpenMP.  
+
+The focus of this project is exploring additional implementations of the Graph500 benchmark.  Specifically the project is looking at the UPC programming model, a partitioned global address space language that extends C.  
+
+UPC is available on several HPC platforms and will be available on the Blue Waters system here at the University of Illinois Ubana-Champaign.
+
+The variety of parallel programming models utilized in the Graph500 benchmark provide valuable insight into discrete performance aspects of these HPC systems.  The UPC implementation of this project offers the additional perspective of a partitioned global address space model and further identifies discrepancies in performance of HPC systems.  
+
+\end{document}  

@@ -1,0 +1,338 @@
+%%% The ``\documentclass'' command has one parameter, based on the kind of
+%%% document you are preparing.
+%%%
+%%% [annual] - Technical paper accepted for presentation at the ACM SIGGRAPH 
+%%%   or SIGGRAPH Asia annual conference.
+%%% [sponsored] - Short or full-length technical paper accepted for 
+%%%   presentation at an event sponsored by ACM SIGGRAPH
+%%%   (but not the annual conference Technical Papers program).
+%%% [abstract] - A one-page abstract of your accepted content
+%%%   (Technical Sketches, Posters, Emerging Technologies, etc.). 
+%%%   Content greater than one page in length should use the "[sponsored]"
+%%%   parameter.
+%%% [preprint] - A preprint version of your final content.
+%%% [review] - A technical paper submitted for review. Includes line
+%%%   numbers and anonymization of author and affiliation information.
+
+\documentclass[annual]{acmsiggraph}
+
+%%% If you are submitting your paper to one of our annual conferences - the 
+%%% ACM SIGGRAPH conference held in North America, or the SIGGRAPH Asia 
+%%% conference held in Southeast Asia - there are several commands you should 
+%%% consider using in the preparation of your document.
+
+%%% 1. ``\TOGonlineID''
+%%% When you submit your paper for review, please use the ``\TOGonlineID''
+%%% command to include the online ID value assigned to your paper by the
+%%% submission management system. Replace '45678' with the value you were
+%%% assigned.
+
+\TOGonlineid{45678}
+
+%%% 2. ``\TOGvolume'' and ``\TOGnumber''
+%%% If you are preparing a preprint of your accepted paper, and your paper
+%%% will be published in an issue of the ACM ``Transactions on Graphics''
+%%% journal, replace the ``0'' values in the commands below with the correct
+%%% volume and number values for that issue - you'll get them before your
+%%% final paper is due.
+
+\TOGvolume{0}
+\TOGnumber{0}
+
+%%% 3. ``TOGarticleDOI''
+%%% The ``TOGarticleDOI'' command accepts the DOI information provided to you
+%%% during production, and which makes up the URLs which identifies the ACM
+%%% article page and direct PDF link in the ACM Digital Library.
+%%% Replace ``1111111.2222222'' with the values you are given.
+
+\TOGarticleDOI{1111111.2222222}
+
+%%% 4. ``\TOGprojectURL'', ``\TOGvideoURL'', ``\TOGdataURL'', ``\TOGcodeURL''
+%%% If you would like to include links to personal repositories for auxiliary
+%%% material related your research contribution, you may use one or more of
+%%% these commands to define an appropriate URL. The ``\TOGlinkslist'' command
+%%% found just before the first section of your document will add hyperlinked
+%%% icons to your document, in addition to hyperlinked icons which point to
+%%% the ACM Digital Library article page and the ACM Digital Library-held PDF.
+
+\TOGprojectURL{}
+\TOGvideoURL{}
+\TOGdataURL{}
+\TOGcodeURL{}
+
+%%% Replace ``PAPER TEMPLATE TITLE'' with the title of your paper or abstract.
+
+\title{PAPER TEMPLATE TITLE}
+
+%%% The ``\author{}'' command takes the names and affiliations of each of the
+%%% authors of your paper or abstract. The ``\thanks{}'' command takes the
+%%% contact information for each author.
+%%% For multiple authors, separate each author's information by the ``\and''
+%%% command.
+
+\author{Roy G. Biv\thanks{e-mail: roy.g.biv@aol.com}\\ Starbucks Research %
+\and Ed Grimley\thanks{e-mail:ed.grimley@aol.com}\\Nigel Mansell\thanks{nigelf1@msn.com}\\ Grimley Widgets, Inc. %
+\and Martha Stewart\thanks{e-mail:martha.stewart@marthastewart.com}\\ Martha Stewart Enterprises \\ Microsoft Research}
+
+%%% The ``pdfauthor'' command accepts the authors of the work,
+%%% comma-delimited, and adds this information to the PDF metadata.
+
+\pdfauthor{Roy G. Biv, Ed Grimley, Nigel Mansell, Martha Stewart}
+
+%%% Keywords that describe your work. The ``\keywordlist'' command will print
+%%% them out.
+
+\keywords{radiosity, global illumination, constant time}
+
+%%% The ``\begin{document}'' command is the start of the document.
+
+%%% If you have user-defined macros, you may include them here.
+
+% example of a user-defined macro called ``remark.''
+% \newcommand{\remark}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+
+%%% A ``teaser'' image appears under the title and affiliation information,
+%%% horizontally centered, and above the two columns of text. This is OPTIONAL.
+%%% If you choose to have a ``teaser'' image, it needs to be placed between
+%%% ``\begin{document}'' and ``\maketitle.''
+
+%\teaser{
+%   \includegraphics[height=1.5in]{images/sampleteaser}
+%   \caption{Spring Training 2009, Peoria, AZ.}
+%}
+
+%%% The ``\maketitle'' command must appear after ``\begin{document}'' and,
+%%% if you have one, after the definition of your ``teaser'' image, and
+%%% before the first ``\section'' command.
+
+\maketitle
+
+%%% Your paper's abstract goes in its own section.
+
+\begin{abstract}
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
+vero eros et accumsan et iusto odio dignissim qui blandit praesent
+luptatum zzril delenit augue duis dolore te feugait nulla
+facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+aliquam erat volutpat.
+
+Citations can be done this way~\cite{Jobs95} or this more concise 
+way~\shortcite{Jobs95}, depending upon the application.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+vel eum iriure dolor in hendrerit~\cite{Pellacini:2005:LAH}
+in vulputate velit esse molestie~\cite{notes2002} 
+consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+delenit augue duis dolore te feugait nulla facilisi.~\cite{Park:2006:DSI}
+
+\end{abstract}
+
+%%% ACM Computing Review (CR) categories.
+%%% See <http://www.acm.org/class/1998/> for details.
+%%% The ``\CRcat'' command takes four arguments.
+
+\begin{CRcatlist}
+  \CRcat{I.3.7}{Computer Graphics}{Three-Dimensional Graphics and Realism}{Radiosity};
+\end{CRcatlist}
+
+%%% The ``\keywordlist'' command prints out the keywords.
+
+\keywordlist
+
+%%% The ``\TOGlinkslist'' command will insert hyperlinked icon(s) to your
+%%% paper. This includes, at a minimum, hyperlinked icons to the ACM article
+%%% page and the ACM Digital Library-held PDF. If you added URLs to
+%%% ``\TOGprojectURL'' or the other, similar commands, they will be added to
+%%% the list of icons.
+%%% Note: this functionality only works for annual-conference papers.
+
+\TOGlinkslist
+
+%%% The ``\copyrightspace'' command 
+%%% Do not remove this command.
+
+\copyrightspace
+
+%%% This is the first section of the body of your paper.
+
+\section{Introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Exposition}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{equation}
+ \sum_{j=1}^{z} j = \frac{z(z+1)}{2}
+\end{equation}
+
+\begin{eqnarray}
+x & \ll & y_{1} + \cdots + y_{n} \\
+  & \leq & z
+\end{eqnarray}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Exposition}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1.5in]{images/samplefigure}
+  \caption{Sample illustration.}
+\end{figure}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Exposition}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Conclusion}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.
+
+\section*{Acknowledgements}
+
+To Robert, for all the bagels.
+
+\bibliographystyle{acmsiggraph}
+\bibliography{template}
+\end{document}
