@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 OCT 2011 12:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 OCT 2011 15:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -410,70 +410,55 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<prob2.png, id=10, 471.7625pt x 313.17pt>
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<prob2.png, id=17, 471.7625pt x 313.17pt>
 File: prob2.png Graphic file (type png)
  <use prob2.png>
-Package pdftex.def Info: prob2.png used on input line 49.
-(pdftex.def)             Requested size: 469.75502pt x 311.84076pt.
-
-Overfull \hbox (20.00006pt too wide) in paragraph at lines 48--50
-\OT1/cmr/m/n/10 /2/2[] 
- []
-
-[2]
+Package pdftex.def Info: prob2.png used on input line 53.
+(pdftex.def)             Requested size: 180.67499pt x 119.93765pt.
 Missing character: There is no Ò in font cmr10!
 Missing character: There is no Ó in font cmr10!
 
-Overfull \hbox (3.63475pt too wide) in paragraph at lines 51--52
+Overfull \hbox (3.63475pt too wide) in paragraph at lines 55--56
 []\OT1/cmr/m/n/10 Briefly out-line the ma-jor steps to com-pute Shell-Fragment 
 cube (re-fer to VLDB04 pa-per High-Dimensional
  []
 
-<prob3.png, id=17, 396.48125pt x 208.78pt>
+[3 <./prob2.png>] <prob3.png, id=21, 396.48125pt x 208.78pt>
 File: prob3.png Graphic file (type png)
  <use prob3.png>
-Package pdftex.def Info: prob3.png used on input line 64.
-(pdftex.def)             Requested size: 469.75502pt x 247.37129pt.
+Package pdftex.def Info: prob3.png used on input line 69.
+(pdftex.def)             Requested size: 180.67499pt x 95.14157pt.
 
-Overfull \hbox (262.63422pt too wide) in paragraph at lines 63--65
-\OT1/cmr/m/n/10 Given a database of five trans-ac-tions ($\OML/cmm/m/it/10 min[
-]upport \OT1/cmr/m/n/10 = 2$): /2/2[] 
- []
-
-[3 <./prob2.png>] <prob4.png, id=21, 180.675pt x 166.6225pt>
+[4 <./prob3.png>] <prob4.png, id=25, 180.675pt x 166.6225pt>
 File: prob4.png Graphic file (type png)
  <use prob4.png>
-Package pdftex.def Info: prob4.png used on input line 94.
-(pdftex.def)             Requested size: 469.75502pt x 433.26166pt.
+Package pdftex.def Info: prob4.png used on input line 101.
+(pdftex.def)             Requested size: 180.67499pt x 166.62462pt.
 
-Overfull \hbox (265.16202pt too wide) in paragraph at lines 93--95
-\OT1/cmr/m/n/10 Given a database of four trans-ac-tions $(\OML/cmm/m/it/10 min[
-]upport \OT1/cmr/m/n/10 = 2)$: /2/2[] 
- []
-
-[4 <./prob3.png>] AED: lastpage setting LastPage 
-[5 <./prob4.png>] [6] (./cs412.hw1.rudolph9.aux) ) 
+AED: lastpage setting LastPage 
+[5 <./prob4.png>] (./cs412.hw1.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5053 strings out of 493633
- 70642 string characters out of 3143378
- 169018 words of memory out of 3000000
- 8238 multiletter control sequences out of 15000+200000
+ 5052 strings out of 493633
+ 70626 string characters out of 3143378
+ 170018 words of memory out of 3000000
+ 8237 multiletter control sequences out of 15000+200000
  12114 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,45p,543b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cs412.hw1.rudolph9.pdf (6 pages, 117888 bytes).
+ 38i,11n,45p,543b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb>
+Output written on cs412.hw1.rudolph9.pdf (5 pages, 127305 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
