@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  15 OCT 2011 16:52
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 OCT 2011 12:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -421,9 +421,6 @@ Overfull \hbox (20.00006pt too wide) in paragraph at lines 48--50
 \OT1/cmr/m/n/10 /2/2[] 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 51.
-
 [2]
 Missing character: There is no Ò in font cmr10!
 Missing character: There is no Ó in font cmr10!
@@ -444,9 +441,6 @@ Overfull \hbox (262.63422pt too wide) in paragraph at lines 63--65
 ]upport \OT1/cmr/m/n/10 = 2$): /2/2[] 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 66.
-
 [3 <./prob2.png>] <prob4.png, id=21, 180.675pt x 166.6225pt>
 File: prob4.png Graphic file (type png)
  <use prob4.png>
@@ -458,45 +452,28 @@ Overfull \hbox (265.16202pt too wide) in paragraph at lines 93--95
 ]upport \OT1/cmr/m/n/10 = 2)$: /2/2[] 
  []
 
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 96.
-
 [4 <./prob3.png>] AED: lastpage setting LastPage 
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 113.
-
-[5 <./prob4.png>]
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 113.
-
-[6] (./cs412.hw1.rudolph9.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[5 <./prob4.png>] [6] (./cs412.hw1.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5055 strings out of 493633
- 70663 string characters out of 3143378
+ 5053 strings out of 493633
+ 70642 string characters out of 3143378
  169018 words of memory out of 3000000
- 8239 multiletter control sequences out of 15000+200000
- 12422 words of font info for 48 fonts, out of 3000000 for 9000
+ 8238 multiletter control sequences out of 15000+200000
+ 12114 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,45p,543b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
-l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cs412.hw1.rudolph9.pdf (6 pages, 126414 bytes).
+ 38i,11n,45p,543b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2011/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on cs412.hw1.rudolph9.pdf (6 pages, 117888 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
