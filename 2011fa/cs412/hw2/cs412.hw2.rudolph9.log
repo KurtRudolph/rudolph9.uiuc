@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 OCT 2011 15:35
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 OCT 2011 22:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**cs412.hw1.rudolph9.tex
-(./cs412.hw1.rudolph9.tex
+**cs412.hw2.rudolph9.tex
+(./cs412.hw2.rudolph9.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
@@ -286,8 +286,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks39
 \verbatim@in@stream=\read1
 )
-(./cs412.hw1.rudolph9.aux)
-\openout1 = `cs412.hw1.rudolph9.aux'.
+(./cs412.hw2.rudolph9.aux)
+\openout1 = `cs412.hw2.rudolph9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -434,18 +434,18 @@ Package pdftex.def Info: prob3.png used on input line 69.
 File: prob4.png Graphic file (type png)
  <use prob4.png>
 Package pdftex.def Info: prob4.png used on input line 101.
-(pdftex.def)             Requested size: 180.67499pt x 166.62462pt.
+(pdftex.def)             Requested size: 108.405pt x 99.97426pt.
 
 AED: lastpage setting LastPage 
-[5 <./prob4.png>] (./cs412.hw1.rudolph9.aux) ) 
+[5 <./prob4.png>] (./cs412.hw2.rudolph9.aux) ) 
 Here is how much of TeX's memory you used:
- 5052 strings out of 493633
- 70626 string characters out of 3143378
+ 5053 strings out of 493633
+ 70644 string characters out of 3143378
  170018 words of memory out of 3000000
- 8237 multiletter control sequences out of 15000+200000
+ 8238 multiletter control sequences out of 15000+200000
  12114 words of font info for 47 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 38i,11n,45p,543b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,45p,629b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist
@@ -455,7 +455,7 @@ ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on cs412.hw1.rudolph9.pdf (5 pages, 127305 bytes).
+Output written on cs412.hw2.rudolph9.pdf (5 pages, 128834 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream
